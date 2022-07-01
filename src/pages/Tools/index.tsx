@@ -95,7 +95,7 @@ export default function Pool() {
                         <AutoColumn gap="md">
                             <RowBetween>
                                 <TYPE.white fontWeight={600} color={theme.text1}>
-                                    {i18n._(t`Helpful Cycoin Tools`)}
+                                    {i18n._(t`Helpful Quest3Coin Tools`)}
                                 </TYPE.white>
                             </RowBetween>
                             <RowBetween>

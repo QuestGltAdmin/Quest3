@@ -51,7 +51,7 @@ function AppBar(): JSX.Element {
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
                                         <a href='https://quest3.com/'>
-                                        <img src={Logo} alt="CyCoin" className="h-10 w-auto" />
+                                        <img src={Logo} alt="Quest3Coin" className="h-10 w-auto" />
                                         </a>
                                     </div>
                                     <div className="hidden sm:block sm:ml-4">
@@ -131,7 +131,7 @@ function AppBar(): JSX.Element {
                                             library.provider.isMetaMask && (
                                                 <>
                                                     <QuestionHelper
-                                                        text={i18n._(t`Add xCyCoin to your Metamask wallet`)}
+                                                        text={i18n._(t`Add xQuest3Coin to your Metamask wallet`)}
                                                     >
                                                         {/* <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-900 hover:bg-dark-800 cursor-pointer"
@@ -171,7 +171,7 @@ function AppBar(): JSX.Element {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'xCyCoin',
+                                                                        symbol: 'xQuest3Coin',
                                                                         decimals: 18,
                                                                         image:
                                                                             'https://samkoin.com/public/images/other/sam1.png'
@@ -191,7 +191,7 @@ function AppBar(): JSX.Element {
                                                                         .then(success => {
                                                                             if (success) {
                                                                                 console.log(
-                                                                                    'Successfully added xCyCoin to MetaMask'
+                                                                                    'Successfully added xQuest3Coin to MetaMask'
                                                                                 )
                                                                             } else {
                                                                                 throw new Error('Something went wrong.')
@@ -222,7 +222,7 @@ function AppBar(): JSX.Element {
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
-                                                    <QuestionHelper text={i18n._(t`Add CyCoin to your Metamask wallet`)}>
+                                                    <QuestionHelper text={i18n._(t`Add Quest3Coin to your Metamask wallet`)}>
                                                         <div
                                                             className="rounded-md bg-dark-1000 hover:bg-dark-800 cursor-pointer"
                                                             onClick={() => {
@@ -246,7 +246,7 @@ function AppBar(): JSX.Element {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'CyCoin',
+                                                                        symbol: 'Quest3Coin',
                                                                         decimals: 18,
                                                                         image:
                                                                         'https://quest3.com/images/tokens/samk-square.png'
@@ -266,7 +266,7 @@ function AppBar(): JSX.Element {
                                                                         .then(success => {
                                                                             if (success) {
                                                                                 console.log(
-                                                                                    'Successfully added CyCoin to MetaMask'
+                                                                                    'Successfully added Quest3Coin to MetaMask'
                                                                                 )
                                                                             } else {
                                                                                 throw new Error('Something went wrong.')

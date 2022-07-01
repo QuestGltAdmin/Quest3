@@ -43,7 +43,7 @@ export default function Home() {
                         <div className='col-md-3 col-sm-6 col-6'>
                             <div className='box-banner-new'>
                                 <h3>$6.66</h3>
-                                <p>CyCoin Price</p>
+                                <p>Quest3Coin Price</p>
                             </div>
                         </div>
                         <div className='col-md-3 col-sm-6 col-6'>
@@ -75,7 +75,7 @@ export default function Home() {
                         <div className='col-lg-5 offset-lg-1 col-md-6'>
                             <div>
                                 <h2 className="common-heading">Quest3 Protocol</h2>
-                                <p className="commonpera">The CyCoin Swap Protocol is a public entity owned and governed by all-inclusive CyCoin holders. Designed with simplicity, speed, affordability and security in mind, CyCoin SWAP allows users to diversify market offerings & make increasing gains. </p>
+                                <p className="commonpera">The Quest3Coin Swap Protocol is a public entity owned and governed by all-inclusive Quest3Coin holders. Designed with simplicity, speed, affordability and security in mind, Quest3Coin SWAP allows users to diversify market offerings & make increasing gains. </p>
                             </div>
                         </div>
                         <div className='col-lg-5 text-center col-md-6'>
@@ -393,7 +393,7 @@ export default function Home() {
                 <div className='container'>
                     <div className='row'>
                         <div className="col-md-6 m-auto">
-                            <p className="copyright-line">© 2022 <b>CyCoin</b>. All rights reserved</p>
+                            <p className="copyright-line">© 2022 <b>Quest3Coin</b>. All rights reserved</p>
                         </div>
                     </div>
                 </div>

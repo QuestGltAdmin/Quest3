@@ -27,35 +27,35 @@ export const QUEST: ChainTokenMap = {
         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',  //ADDRESS NEED TO UPDATE
         18,
         'QUEST',
-        'Cycoin'
+        'Quest3Coin'
     ),
     [ChainId.MATIC]: new Token(
         ChainId.MATIC,
         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',  //address need to update
         18,
         'QUEST',
-        'Cycoin'
+        'Quest3Coin'
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
         '0x5e88777e5956CBf076500E75b09aCfE8f09BC9ca',
         18,
         'QUEST',
-        'Cycoin'
+        'Quest3Coin'
     ),
     [ChainId.BSC_TESTNET]: new Token(
         ChainId.BSC_TESTNET,
         '0x1Da4EbB979A6925159eAc5Ad8B675B9ED75b499F',
         18,
         'QUEST',
-        'Cycoin'
+        'Quest3Coin'
     ),
     [ChainId.BSC]: new Token(
         ChainId.BSC,
         '0xC456D84D202FcB97E29Fc2dce20aC613434C8065',  
         10,
         'QUEST',
-        'Cycoin'
+        'Quest3Coin'
     )
 
     

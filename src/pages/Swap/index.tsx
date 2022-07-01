@@ -619,7 +619,7 @@ export default function Swap() {
                     {/*                <img src={PolygonLogo} className="w-24 h-24 absolute top-2" alt="" />*/}
                     {/*                <div className="pl-32">*/}
                     {/*                    <div className="text-high-emphesis">*/}
-                    {/*                        {i18n._(t`Check out cycoin on Polygon (Matic)`)}*/}
+                    {/*                        {i18n._(t`Check out Quest3Coin on Polygon (Matic)`)}*/}
                     {/*                    </div>*/}
                     {/*                    <div className="text-high-emphesis text-sm">*/}
                     {/*                        {i18n._(t`Click here to switch to Polygon using Metamask`)}*/}

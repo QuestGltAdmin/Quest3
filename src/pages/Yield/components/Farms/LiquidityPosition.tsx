@@ -36,7 +36,7 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                         </div> 
                         <div className="hidden md:block text-sm sm:text-base ml-4 text-gray-500 text-right">
                             {/* TODO: remove hard coding */}
-                            {props.farm && props.farm.contract === 'masterchefv2' ? 'CyCoin & WETH' : 'QUESTCOIN'}
+                            {props.farm && props.farm.contract === 'masterchefv2' ? 'Quest3Coin & WETH' : 'QUESTCOIN'}
                         </div>
                         {/* <div className="text-gray-500 text-sm sm:text-base text-right"> */}
                             {/* {formattedNum(props.farm.tvl, true)} */}
