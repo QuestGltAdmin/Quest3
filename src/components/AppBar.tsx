@@ -50,9 +50,9 @@ function AppBar(): JSX.Element {
                             <div className="flex items-center justify-between h-16">
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
-                                        <a href='https://quest3.com/'>
+                                        <NavLink to={'/'}>
                                         <img src={Logo} alt="Quest3Coin" className="h-10 w-auto" />
-                                        </a>
+                                        </NavLink>
                                     </div>
                                     <div className="hidden sm:block sm:ml-4">
                                         <div className="flex space-x-2">
