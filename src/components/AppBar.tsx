@@ -1,7 +1,7 @@
 import { ChainId, Currency } from 'quest-quest3-sdk'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import Logo from '../assets/images/CySwap.png'
+import Logo from '../assets/images/Quest3_green.png'
 import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
 import { useETHBalances } from '../state/wallet/hooks'
 import { ReactComponent as Burger } from '../assets/images/burger.svg'
@@ -51,7 +51,7 @@ function AppBar(): JSX.Element {
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
                                         <NavLink to={'/'}>
-                                        <img src={Logo} alt="Quest3Coin" className="h-10 w-auto" />
+                                        <img src={Logo} alt="Quest3Coin" className="h-16 w-auto" />
                                         </NavLink>
                                     </div>
                                     <div className="hidden sm:block sm:ml-4">
