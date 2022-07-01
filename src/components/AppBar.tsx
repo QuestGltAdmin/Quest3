@@ -84,24 +84,24 @@ function AppBar(): JSX.Element {
                                                 {i18n._(t`Pool`)}
                                             </NavLink>
                                             )}
-                                            {chainId && [ChainId.BSC_TESTNET].includes(chainId) && (
+                                            {/* {chainId && [ChainId.BSC_TESTNET].includes(chainId) && (
                                                 <NavLink id={`yield-n
                                                 av-link`} to={'/yield'}>
                                                     {i18n._(t`Yield`)}
                                                 </NavLink>
-                                            )}
+                                            )} */}
                                             {/* {chainId &&
                                                 [ChainId.RINKEBY , ChainId.BSC_TESTNET].includes(chainId) && (
                                                 <NavLink id={`sushibar-nav-link`} to={'/CyBar'}>
                                                     {i18n._(t`CyBar`)}
                                                 </NavLink>
                                             )} */}
-                                            {chainId &&
+                                            {/* {chainId &&
                                                 [ChainId.BSC_TESTNET].includes(chainId) && (
                                                 <NavLink id={`sushibar-nav-link`} to={'/migrate'}>
                                                     {i18n._(t`Migrate`)}
                                                 </NavLink>
-                                            )}
+                                            )} */}
                                             {/* 
                                             {chainId &&
                                                 [
@@ -395,23 +395,23 @@ function AppBar(): JSX.Element {
                                     {i18n._(t`Pool`)}
                                 </NavLink>
                             )}
-                                {chainId && [ChainId.BSC_TESTNET].includes(chainId) && (
+                                {/* {chainId && [ChainId.BSC_TESTNET].includes(chainId) && (
                                     <NavLink id={`yield-nav-link`} to={'/yield'}>
                                         {i18n._(t`Yield`)}
                                     </NavLink>
-                                )}
+                                )} */}
                                  {/* {chainId &&
                                     [ ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) && (
                                         <NavLink id={`stake-nav-link`} to={'/Cybar'}>
                                             {i18n._(t`CyBar`)}
                                     </NavLink>
                                 )} */}
-                                 {chainId &&
+                                 {/* {chainId &&
                                     [ChainId.BSC_TESTNET].includes(chainId) && (
                                         <NavLink id={`stake-nav-link`} to={'/migrate'}>
                                             {i18n._(t`Migrate`)}
                                     </NavLink>
-                                )} 
+                                )}  */}
                                 {/* 
                                 {chainId &&
                                     [

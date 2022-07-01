@@ -58,7 +58,7 @@ export default function MoreMenu() {
                                </NavLink>
                             )}
                         </Menu.Item>
-                        <Menu.Item>
+                        {/* <Menu.Item>
                             {({ active }) => (
                                 <NavLink
                                 key={`Yield`} 
@@ -68,8 +68,8 @@ export default function MoreMenu() {
                                     Yield
                                 </NavLink>
                             )}
-                        </Menu.Item>
-                        <Menu.Item>
+                        </Menu.Item> */}
+                        {/* <Menu.Item>
                             {({ active }) => (
                                <NavLink
                                key={`Migrate`}
@@ -79,7 +79,7 @@ export default function MoreMenu() {
                                    Migrate
                                </NavLink>
                             )}
-                        </Menu.Item>
+                        </Menu.Item> */}
                     </Menu.Items>
                 </>
             )}

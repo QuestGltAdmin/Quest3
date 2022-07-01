@@ -1,7 +1,7 @@
 {
-    "name": "@quest3/interface",
-    "description": "Quest3 Interface",
-    "homepage": "https://quest3.com",
+    "name": "@quest/interface",
+    "description": "Quest Interface",
+    "homepage": "https://quest.com",
     "private": true,
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
