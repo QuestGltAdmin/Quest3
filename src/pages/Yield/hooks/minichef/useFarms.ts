@@ -13,7 +13,7 @@ import {
     pairTimeTravelQuery,
     miniChefPoolQuery
 } from 'apollo/queries'
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 //import Fraction from '../../../entities/Fraction'
 //import { resetIdCounter } from 'react-tabs'
 //import { apys } from '@lufycz/sushi-data/dist/sushi/queries/masterchef'
@@ -145,7 +145,7 @@ const useFarms = () => {
                     slpBalance: pool.slpBalance,
                     liquidityPair: pair,
                     rewardTokens: [
-                        '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a', //CYY on Matic
+                        '0x0b3F868E0BE5597D5DB7fEB59E1CADBb0fdDa50a', //QUEST on Matic
                         '0x0d500B1d8E8eF31E21C99d1Db9A6444d3ADf1270' // MATIC on Matic
                     ],
                     cyyRewardPerDay: rewardPerDay,

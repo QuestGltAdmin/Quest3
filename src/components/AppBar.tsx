@@ -1,4 +1,4 @@
-import { ChainId, Currency } from 'quest-cyswap-sdk1'
+import { ChainId, Currency } from 'quest-quest3-sdk'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Logo from '../assets/images/CySwap.png'
@@ -50,7 +50,7 @@ function AppBar(): JSX.Element {
                             <div className="flex items-center justify-between h-16">
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
-                                        <a href='https://cyswap.com/'>
+                                        <a href='https://quest3.com/'>
                                         <img src={Logo} alt="CyCoin" className="h-10 w-auto" />
                                         </a>
                                     </div>
@@ -249,7 +249,7 @@ function AppBar(): JSX.Element {
                                                                         symbol: 'CyCoin',
                                                                         decimals: 18,
                                                                         image:
-                                                                        'https://cyswap.com/images/tokens/samk-square.png'
+                                                                        'https://quest3.com/images/tokens/samk-square.png'
                                                                     }
                                                                 }
 
@@ -423,7 +423,7 @@ function AppBar(): JSX.Element {
                                     ].includes(chainId) && (
                                         <ExternalLink
                                             id={`analytics-nav-link`}
-                                            href={ANALYTICS_URL[chainId] || 'https://analytics.cyswap.com'}
+                                            href={ANALYTICS_URL[chainId] || 'https://analytics.quest3.com'}
                                         >
                                             {i18n._(t`Analytics`)}
                                         </ExternalLink>

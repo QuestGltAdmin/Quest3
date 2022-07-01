@@ -1,17 +1,17 @@
-# CySwap Interface
+# Quest3 Interface
 
 [![Styled With Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 
-An open source interface for CySwap -- a protocol for decentralized exchange of Ethereum tokens.
+An open source interface for Quest3 -- a protocol for decentralized exchange of Ethereum tokens.
 
 - Website: [cyex.com](https://cyex.com/)
-- Interface: [cyswap.com](https://cyswap.com/)
+- Interface: [quest3.com](https://quest3.com/)
 - Twitter: [@cyexch](https://twitter.com/cyexch)
 
-## Accessing the CySwap Interface
+## Accessing the Quest3 Interface
 
-To access the Cyswap Interface, use an IPFS gateway link from the
-or visit [cyswap.com](https://cyswap.com/).
+To access the Quest3 Interface, use an IPFS gateway link from the
+or visit [quest3.com](https://quest3.com/).
 
 ## Listing a token
 

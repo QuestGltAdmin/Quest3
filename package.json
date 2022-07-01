@@ -1,7 +1,7 @@
 {
-    "name": "@cyswap/interface",
-    "description": "CySwap Interface",
-    "homepage": "https://cyswap.com",
+    "name": "@quest3/interface",
+    "description": "Quest3 Interface",
+    "homepage": "https://quest3.com",
     "private": true,
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
@@ -111,7 +111,7 @@
         "prettier": "^1.17.0",
         "qs": "^6.9.4",
         "quest-cyswap-default-token-list": "^1.0.10",
-        "quest-cyswap-sdk1": "^1.0.2",
+        "quest-quest3-sdk": "^1.0.0",
         "quest-switchswap-core": "1.0.2",
         "quest-switchswap-sushi-data": "^1.0.2",
         "react": "^17.0.2",

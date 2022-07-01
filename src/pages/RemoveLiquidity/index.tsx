@@ -1,7 +1,7 @@
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
 import { ArrowDown, Plus } from 'react-feather'
 import { ButtonConfirmed, ButtonError, ButtonLight, ButtonPrimary } from '../../components/ButtonLegacy'
-import { ChainId, Currency, ETHER, Percent, WETH, currencyEquals } from 'quest-cyswap-sdk1'
+import { ChainId, Currency, ETHER, Percent, WETH, currencyEquals } from 'quest-quest3-sdk'
 import React, { useCallback, useContext, useMemo, useState } from 'react'
 import Row, { AutoRow, RowBetween, RowFixed } from '../../components/Row'
 import { Trans, t } from '@lingui/macro'
@@ -138,7 +138,7 @@ export default function RemoveLiquidity({
                 { name: 'verifyingContract', type: 'address' }
             ]
             const domain = {
-                name: 'CySwap LP Token',
+                name: 'Quest3 LP Token',
                 version: '1',
                 chainId: chainId,
                 verifyingContract: pair.liquidityToken.address
@@ -406,7 +406,7 @@ export default function RemoveLiquidity({
             <>
                 <RowBetween>
                     <Text color={theme.text2} fontWeight={500} fontSize={16}>
-                        {i18n._(t`CYCOIN ${currencyA?.getSymbol(chainId)}/${currencyB?.getSymbol(chainId)} Burned`)}
+                        {i18n._(t`QUESTCOIN ${currencyA?.getSymbol(chainId)}/${currencyB?.getSymbol(chainId)} Burned`)}
                     </Text>
                     <RowFixed>
                         <DoubleCurrencyLogo currency0={currencyA} currency1={currencyB} margin={true} />
@@ -504,7 +504,7 @@ export default function RemoveLiquidity({
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Remove Liquidity`)} | Cyswap</title>
+                <title>{i18n._(t`Remove Liquidity`)} | Quest3</title>
             </Helmet>
 
             <div className="w-full max-w-2xl mb-5 px-4">

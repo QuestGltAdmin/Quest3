@@ -3,8 +3,8 @@ import { ThemeContext } from 'styled-components'
 import BalanceCard from './BalanceCard'
 import { Button } from '../../components'
 import { ChevronLeft } from 'react-feather'
-import { ChainId } from 'quest-cyswap-sdk1'
-import { CYY, xCYY } from '../../constants'
+import { ChainId } from 'quest-quest3-sdk'
+import { QUEST, xQUEST } from '../../constants'
 import useTokenBalance from '../../hooks/useTokenBalance'
 import { useHistory } from 'react-router-dom'
 import TransactionsPanel from './TransactionsPanel'
@@ -17,8 +17,8 @@ const mock = {
 export default function CyyBarTransactions() {
     const theme = useContext(ThemeContext)
 
-    const cyyBalance = useTokenBalance(CYY[ChainId.BSC]?.address ?? '')
-    const xCyyBalance = useTokenBalance(xCYY[ChainId.BSC]?.address ?? '')
+    const cyyBalance = useTokenBalance(QUEST[ChainId.BSC]?.address ?? '')
+    const xCyyBalance = useTokenBalance(xQUEST[ChainId.BSC]?.address ?? '')
 
     const history = useHistory()
 
@@ -52,11 +52,11 @@ export default function CyyBarTransactions() {
                     <div className="hidden md:flex justify-between text-caption mt-4">
                         <div className="flex items-center">
                             <p className="text-primary font-bold">Total gain:&nbsp;</p>
-                            <p className="text-high-emphesis font-bold">{`${mock.totalGain} CYY`}</p>
+                            <p className="text-high-emphesis font-bold">{`${mock.totalGain} QUEST`}</p>
                         </div>
                         <div className="flex items-center">
                             <p className="text-primary">Time weighted average balance staked:&nbsp;</p>
-                            <p className="text-high-emphesis font-bold">{`${mock.avgBalStaked} CYY`}</p>
+                            <p className="text-high-emphesis font-bold">{`${mock.avgBalStaked} QUEST`}</p>
                         </div>
                     </div>
                 </div>

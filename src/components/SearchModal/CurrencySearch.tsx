@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from 'quest-cyswap-sdk1'
+import { Currency, ETHER, Token } from 'quest-quest3-sdk'
 import useDebounce from 'hooks/useDebounce'
 import { useOnClickOutside } from 'hooks/useOnClickOutside'
 import useTheme from 'hooks/useTheme'

@@ -33,7 +33,7 @@ export default function BentoBalances(): JSX.Element {
     return (
         <>
             <Helmet>
-                <title>BentoBox Balances | Cyswap</title>
+                <title>BentoBox Balances | Quest3</title>
             </Helmet>
             <Layout
                 left={

@@ -1,4 +1,4 @@
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 import { FortmaticConnector } from './Fortmatic'
 import { InjectedConnector } from '@web3-react/injected-connector'
 import { LatticeConnector } from '@web3-react/lattice-connector'
@@ -33,7 +33,7 @@ const RPC = {
     [ChainId.HARMONY_TESTNET]: 'https://explorer.pops.one',
     [ChainId.OKEX]: 'https://exchainrpc.okex.org',
     [ChainId.OKEX_TESTNET]: 'https://exchaintestrpc.okex.org',
-    // [ChainId.CYCOIN_MAINNET]: 'https://mainnet.cycoin.com:8502'
+    // [ChainId.QUESTCOIN_MAINNET]: 'https://mainnet.cycoin.com:8502'
 }
 
 export const network = new NetworkConnector({
@@ -89,7 +89,7 @@ export const walletconnect = new WalletConnectConnector({
 export const lattice = new LatticeConnector({
     chainId: 1, 
     url: RPC[ChainId.MAINNET],
-    appName: 'CySwap'
+    appName: 'Quest3'
 })
 
 // mainnet only
@@ -107,8 +107,8 @@ export const portis = new PortisConnector({
 // mainnet only
 export const walletlink = new WalletLinkConnector({
     url: RPC[ChainId.MAINNET],
-    appName: 'Cyswap',
-    appLogoUrl: 'https://cyswap.com/images/tokens/samk-square.png'
+    appName: 'Quest3',
+    appLogoUrl: 'https://quest3.com/images/tokens/samk-square.png'
 })
 
 // mainnet only

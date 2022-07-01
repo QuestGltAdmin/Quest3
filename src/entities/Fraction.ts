@@ -1,6 +1,6 @@
 import { BigNumber, BigNumberish } from '@ethersproject/bignumber'
 import { One, Zero } from '@ethersproject/constants'
-import { Fraction as SDKFraction } from 'quest-cyswap-sdk1'
+import { Fraction as SDKFraction } from 'quest-quest3-sdk'
 import { formatBalance, isEmptyValue, parseBalance } from '../utils'
 
 class Fraction {

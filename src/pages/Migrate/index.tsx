@@ -1,5 +1,5 @@
 import { ApprovalState, useApproveCallback } from '../../hooks/useApproveCallback'
-import { ChainId, JSBI } from 'quest-cyswap-sdk1'
+import { ChainId, JSBI } from 'quest-quest3-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import { formatUnits, parseUnits } from '@ethersproject/units'
 import useMigrateState, { MigrateState } from '../../hooks/useMigrateState'
@@ -307,7 +307,7 @@ const MigrateV2 = () => {
     return (
         <>
             <Helmet>
-                <title>Migrate LP tokens | Cyswap</title>
+                <title>Migrate LP tokens | Quest3</title>
                 <meta name="description" content="Migrate LP tokens to Cyy LP tokens" />
             </Helmet>
 

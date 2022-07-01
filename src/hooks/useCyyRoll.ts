@@ -1,4 +1,4 @@
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 import { signERC2612Permit } from 'eth-permit'
 import { ethers } from 'ethers'
 import { useCallback } from 'react'
@@ -42,7 +42,7 @@ const useCyyRoll = (version: 'v1' | 'v2' = 'v2') => {
 
                 ReactGA.event({
                     category: 'Migrate',
-                    action: `${from}->Cyswap`,
+                    action: `${from}->Quest3`,
                     label: 'migrate'
                 })
 

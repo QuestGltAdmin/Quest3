@@ -1,4 +1,4 @@
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 import MULTICALL_ABI from './abi.json'
 
 const MULTICALL_NETWORKS: { [chainId in ChainId]: string } = {

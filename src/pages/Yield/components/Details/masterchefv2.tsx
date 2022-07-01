@@ -1,7 +1,7 @@
 import { ApprovalState, useApproveCallback } from '../../../../hooks/useApproveCallback'
 import { Link, useHistory } from 'react-router-dom'
 import React, { useState } from 'react'
-import { Token, WETH } from 'quest-cyswap-sdk1'
+import { Token, WETH } from 'quest-quest3-sdk'
 import { Trans, t } from '@lingui/macro'
 import { formattedNum, isAddress, isAddressString, isWETH } from '../../../../utils'
 
@@ -87,7 +87,7 @@ export default function InputGroup({
                                 setPendingTx(false)
                             }}
                         >
-                            Harvest {formattedNum(pending)} CYY & {formattedNum(reward)} ALCX
+                            Harvest {formattedNum(pending)} QUEST & {formattedNum(reward)} ALCX
                         </Button>
                     </div>
                 )}

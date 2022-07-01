@@ -6,8 +6,8 @@ import InfoCard from './InfoCard'
 import APRCard from './APRCard'
 import StakeCard from './StakeCard'
 import BalanceCard from './BalanceCard'
-import { ChainId } from 'quest-cyswap-sdk1'
-import {CYY, xCYY } from '../../constants'
+import { ChainId } from 'quest-quest3-sdk'
+import {QUEST, xQUEST } from '../../constants'
 import useTokenBalance from '../../hooks/useTokenBalance'
 
 const mockData = {
@@ -19,8 +19,8 @@ export default function XCyy() {
     const { account, chainId } = useActiveWeb3React()
 
 // mainnet    
-    // const cyyBalance = useTokenBalance(CYY[ChainId.MAINNET]?.address ?? '')
-    // const xCyyBalance = useTokenBalance(xCYY[ChainId.MAINNET]?.address ?? '')
+    // const cyyBalance = useTokenBalance(QUEST[ChainId.MAINNET]?.address ?? '')
+    // const xCyyBalance = useTokenBalance(xQUEST[ChainId.MAINNET]?.address ?? '')
 
 // Rinkeby
     
@@ -31,47 +31,47 @@ export default function XCyy() {
     const cyyBalance = useTokenBalance(
         (chainId === ChainId.MATIC)
         ? 
-        CYY[ChainId.MATIC]?.address ?? ''
+        QUEST[ChainId.MATIC]?.address ?? ''
         :
         (chainId === ChainId.RINKEBY)
         ? 
-        CYY[ChainId.RINKEBY ]?.address ?? ''
+        QUEST[ChainId.RINKEBY ]?.address ?? ''
         :
         (chainId === ChainId.BSC_TESTNET)
         ? 
-        CYY[ChainId.BSC_TESTNET ]?.address ?? ''
+        QUEST[ChainId.BSC_TESTNET ]?.address ?? ''
         :
         (chainId === ChainId.MAINNET)
         ? 
-        CYY[ChainId.MAINNET ]?.address ?? ''
+        QUEST[ChainId.MAINNET ]?.address ?? ''
         :
-        CYY[ChainId.BSC ]?.address ?? ''
+        QUEST[ChainId.BSC ]?.address ?? ''
         )
         
     const xCyyBalance = useTokenBalance(
         (chainId === ChainId.MATIC)
         ?
-        xCYY[ChainId.MATIC]?.address ?? ''
+        xQUEST[ChainId.MATIC]?.address ?? ''
         :
         (chainId === ChainId.RINKEBY)
         ?
-        xCYY[ChainId.RINKEBY]?.address ?? ''
+        xQUEST[ChainId.RINKEBY]?.address ?? ''
         :
         (chainId === ChainId.BSC_TESTNET)
         ?
-        xCYY[ChainId.BSC_TESTNET]?.address ?? ''
+        xQUEST[ChainId.BSC_TESTNET]?.address ?? ''
         :
         (chainId === ChainId.MAINNET)
         ?
-        xCYY[ChainId.MAINNET]?.address ?? ''
+        xQUEST[ChainId.MAINNET]?.address ?? ''
         :
-        xCYY[ChainId.BSC]?.address ?? ''
+        xQUEST[ChainId.BSC]?.address ?? ''
         )
 
     return (
         <>
             <Helmet>
-                <title>xCYY | swap</title>
+                <title>xQUEST | swap</title>
             </Helmet>
             <div className="flex flex-wrap w-full w-full min-h-fitContent">
                 <div style={{minWidth: 250 }} className=" mb-6 justify-center regobar-side0-box">

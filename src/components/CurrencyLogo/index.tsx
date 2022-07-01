@@ -1,4 +1,4 @@
-import { ChainId, Currency, ETHER, Token } from 'quest-cyswap-sdk1'
+import { ChainId, Currency, ETHER, Token } from 'quest-quest3-sdk'
 import React, { useMemo } from 'react'
 
 import AvalancheLogo from '../../assets/images/avalanche-logo.png'

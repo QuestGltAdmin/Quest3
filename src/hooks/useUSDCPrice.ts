@@ -1,4 +1,4 @@
-import { ChainId, Currency, JSBI, Price, WETH, currencyEquals } from 'quest-cyswap-sdk1'
+import { ChainId, Currency, JSBI, Price, WETH, currencyEquals } from 'quest-quest3-sdk'
 import { useMemo } from 'react'
 import { USDC } from '../constants'
 import { PairState, usePairs } from '../data/Reserves'

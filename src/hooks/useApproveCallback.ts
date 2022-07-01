@@ -1,6 +1,6 @@
 import { MaxUint256 } from '@ethersproject/constants'
 import { TransactionResponse } from '@ethersproject/providers'
-import { CurrencyAmount, ETHER, TokenAmount, Trade } from 'quest-cyswap-sdk1'
+import { CurrencyAmount, ETHER, TokenAmount, Trade } from 'quest-quest3-sdk'
 import { useCallback, useMemo } from 'react'
 import { useTokenAllowance } from '../data/Allowances'
 import { Field } from '../state/swap/actions'

@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from 'quest-cyswap-sdk1'
+import { Currency, ETHER, Token } from 'quest-quest3-sdk'
 
 export function currencyId(currency: Currency): string {
     if (currency === ETHER) return 'ETH'

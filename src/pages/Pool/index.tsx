@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair } from 'quest-cyswap-sdk1'
+import { ChainId, JSBI, Pair } from 'quest-quest3-sdk'
 import { transparentize } from 'polished'
 import React, { useContext, useMemo } from 'react'
 import { Link, useHistory } from 'react-router-dom'
@@ -154,7 +154,7 @@ export default function Pool() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Pool`)} | Cyswap</title>
+                <title>{i18n._(t`Pool`)} | Quest3</title>
             </Helmet>
             <div className="bg-dark-900 w-full max-w-2xl rounded shadow-liquidity-purple-glow sc-box-shadow">
                 <ExchangeHeader />

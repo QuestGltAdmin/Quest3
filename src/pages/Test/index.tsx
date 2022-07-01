@@ -1,5 +1,5 @@
 import React from 'react'
-// import { PancakeV1Pair, PancakeV2Pair } from 'quest-cyswap-sdk1'
+// import { PancakeV1Pair, PancakeV2Pair } from 'quest-quest3-sdk'
 
 export default function Test() {
     return <div></div>
@@ -81,7 +81,7 @@ export default function Test() {
     // return (
     //     <>
     //         <Helmet>
-    //             <title>Migrate | cyswap</title>
+    //             <title>Migrate | quest3</title>
     //         </Helmet>
     //         <div>
     //             <div>

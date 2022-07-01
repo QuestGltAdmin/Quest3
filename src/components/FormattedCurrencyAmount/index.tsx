@@ -1,5 +1,5 @@
 import React from 'react'
-import { CurrencyAmount, Fraction, JSBI } from 'quest-cyswap-sdk1'
+import { CurrencyAmount, Fraction, JSBI } from 'quest-quest3-sdk'
 
 const CURRENCY_AMOUNT_MIN = new Fraction(JSBI.BigInt(1), JSBI.BigInt(1000000))
 

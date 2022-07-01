@@ -1,4 +1,4 @@
-import { Trade, TradeType } from 'quest-cyswap-sdk1'
+import { Trade, TradeType } from 'quest-quest3-sdk'
 import React, { useContext, useMemo, useState } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'
@@ -131,7 +131,7 @@ export default function SwapModalFooter({
                             {i18n._(t`You Save`)}
                         </TYPE.black>
                         <QuestionHelper
-                            text={i18n._(t`Your saving as compared to Cyswap.`)}
+                            text={i18n._(t`Your saving as compared to Quest3.`)}
                         />
                     </RowFixed>
                     <FormattedPriceImpact priceImpact={priceImpactWithoutFee} />

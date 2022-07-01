@@ -1,4 +1,4 @@
-import { Percent } from 'quest-cyswap-sdk1'
+import { Percent } from 'quest-quest3-sdk'
 import React from 'react'
 import { ONE_BIPS } from '../../constants'
 import { warningSeverity } from '../../utils/prices'

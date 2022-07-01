@@ -1,4 +1,4 @@
-import { Token } from 'quest-cyswap-sdk1'
+import { Token } from 'quest-quest3-sdk'
 import Card from 'components/Card'
 import Column from 'components/Column'
 import CurrencyLogo from 'components/CurrencyLogo'

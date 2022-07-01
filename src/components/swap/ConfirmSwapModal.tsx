@@ -1,4 +1,4 @@
-import { currencyEquals, Trade } from 'quest-cyswap-sdk1'
+import { currencyEquals, Trade } from 'quest-quest3-sdk'
 import React, { useCallback, useMemo } from 'react'
 import { useActiveWeb3React } from '../../hooks/useActiveWeb3React'
 import TransactionConfirmationModal, {

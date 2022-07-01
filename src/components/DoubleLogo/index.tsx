@@ -1,4 +1,4 @@
-import { Currency } from 'quest-cyswap-sdk1'
+import { Currency } from 'quest-quest3-sdk'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'

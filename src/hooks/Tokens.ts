@@ -1,5 +1,5 @@
 import { parseBytes32String } from '@ethersproject/strings'
-import { Currency, ETHER, Token, currencyEquals } from 'quest-cyswap-sdk1'
+import { Currency, ETHER, Token, currencyEquals } from 'quest-quest3-sdk'
 import { arrayify } from 'ethers/lib/utils'
 import { useMemo } from 'react'
 import { filterTokens } from '../components/SearchModal/filtering'

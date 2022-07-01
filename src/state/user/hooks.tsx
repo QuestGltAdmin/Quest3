@@ -1,4 +1,4 @@
-import { ChainId, Pair, Token } from 'quest-cyswap-sdk1'
+import { ChainId, Pair, Token } from 'quest-quest3-sdk'
 import flatMap from 'lodash.flatmap'
 import { useCallback, useMemo } from 'react'
 import ReactGA from 'react-ga'
@@ -198,7 +198,7 @@ export function useURLWarningToggle(): () => void {
  * @param tokenB the other token
  */
 export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
-    return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB), 18, 'CYLP', 'CySwap LP Token')
+    return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB), 18, 'QLP', 'Quest3 LP Token')
 }
 
 // export function toPancakeV1LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {

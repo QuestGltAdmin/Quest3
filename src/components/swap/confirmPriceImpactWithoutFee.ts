@@ -1,4 +1,4 @@
-import { Percent } from 'quest-cyswap-sdk1'
+import { Percent } from 'quest-quest3-sdk'
 import { ALLOWED_PRICE_IMPACT_HIGH, PRICE_IMPACT_WITHOUT_FEE_CONFIRM_MIN } from '../../constants'
 
 /**

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 import Circle from '../../assets/images/blue-loader.svg'
 import { CustomLightSpinner } from '../../theme'
 import { getTokenIconUrl } from '../functions'

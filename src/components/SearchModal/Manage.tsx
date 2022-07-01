@@ -1,4 +1,4 @@
-import { Token } from 'quest-cyswap-sdk1'
+import { Token } from 'quest-quest3-sdk'
 import { TokenList } from '@uniswap/token-lists'
 import { RowBetween } from 'components/Row'
 import React, { useState } from 'react'

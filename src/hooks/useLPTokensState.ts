@@ -1,4 +1,4 @@
-import { ChainId, Token, TokenAmount } from 'quest-cyswap-sdk1'
+import { ChainId, Token, TokenAmount } from 'quest-quest3-sdk'
 import { useBoringHelperContract, useDashboardContract, useQuickSwapFactoryContract ,usePancakeswapFactoryContract, useFactoryContract} from 'hooks/useContract'
 import { useCallback, useEffect, useRef, useState } from 'react'
 import {useDefaultTokenList } from './../state/lists/hooks'
@@ -171,21 +171,21 @@ const useLPTokensState = () => {
 
             else if (ChainId.BSC_TESTNET === chainId) {
                 const tokens = Object.values(defaultTokens).filter((token: Token) => token.chainId === chainId)
-                let CySwapTokens=[];
+                let Quest3Tokens=[];
                 for(let i=0 ;i <tokens.length;i++){
-                    CySwapTokens.push(tokens[i].address);
+                    Quest3Tokens.push(tokens[i].address);
                 }
 
                 let pairAddr= new Set();
-                // Get pairs from PancakeSwap for all the combinations of tokens on CYSwap
+                // Get pairs from PancakeSwap for all the combinations of tokens on Quest3
                 let newData=[]
                 let comparisonData= []
 
-                for(let i=0; i<CySwapTokens.length;i++){
-                    for(let j=1; j<CySwapTokens.length; j++){
+                for(let i=0; i<Quest3Tokens.length;i++){
+                    for(let j=1; j<Quest3Tokens.length; j++){
                         let pair= await PancakeswapFactoryContract?.getPair(
-                            CySwapTokens[i],
-                            CySwapTokens[j]
+                            Quest3Tokens[i],
+                            Quest3Tokens[j]
                         )
                         comparisonData.push(pair.toString());
                         if(pair.toString()!== "0x0000000000000000000000000000000000000000"
@@ -193,8 +193,8 @@ const useLPTokensState = () => {
                         ){
                             let obj= {
                                 token: pair.toString(),
-                                token0: CySwapTokens[i],
-                                token1: CySwapTokens[j]
+                                token0: Quest3Tokens[i],
+                                token1: Quest3Tokens[j]
                             }
                             newData.push(obj);
                         }
@@ -212,7 +212,7 @@ const useLPTokensState = () => {
                
                 const pairAddresses= arr;
                 const pollPairs = await boringHelperContract?.pollPairs(account, pairAddresses)
-                 const tokenAddresses= CySwapTokens;
+                 const tokenAddresses= Quest3Tokens;
                  const tokenDetails_ = (await boringHelperContract?.getTokenInfo(tokenAddresses)).reduce(
                     (acc: any, cur: any) => {
                         acc[cur[0]] = cur

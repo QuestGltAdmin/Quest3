@@ -123,7 +123,7 @@ export default function LendingPair({
         >
             <Helmet>
                 <title>
-                    Lend {pair?.asset?.symbol}-{pair?.collateral?.symbol} | CYCOIN
+                    Lend {pair?.asset?.symbol}-{pair?.collateral?.symbol} | QUESTCOIN
                 </title>
             </Helmet>
             <Card

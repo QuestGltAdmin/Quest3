@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from 'quest-cyswap-sdk1'
+import { Currency, Percent, Price } from 'quest-quest3-sdk'
 import React, { useContext } from 'react'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'

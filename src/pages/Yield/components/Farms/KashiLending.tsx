@@ -16,7 +16,7 @@ const KashiLending = ({ farm }: any) => {
                     >
                         <div className="text-sm sm:text-base font-semibold">{farm && farm.symbol}</div>
                         <div className="hidden md:block text-sm sm:text-base ml-4 text-gray-500 text-right">
-                            {'CYCOIN'}
+                            {'QUESTCOIN'}
                         </div>
                         <div className="text-gray-500 text-sm sm:text-base text-right">
                             {formattedNum(farm.tvl, true)}
@@ -44,8 +44,8 @@ const KashiLending = ({ farm }: any) => {
                         <div className="md:col-span-1 hidden md:flex flex-row space-x-2 justify-end items-center ml-4">
                             <div>
                                 <div className="text-gray-500 text-right font-semibold text-sm sm:text-sm">
-                                    2.16 CYCOIN
-                                    {/* {formattedNum(farm.sushiRewardPerDay)} CYCOIN */}
+                                    2.16 QUESTCOIN
+                                    {/* {formattedNum(farm.sushiRewardPerDay)} QUESTCOIN */}
                                 </div>
                                 <div className="text-gray-500 text-right text-xs">per day</div>
                             </div>

@@ -7,7 +7,7 @@ import { useFuse, useSortableData } from 'hooks'
 import { useMasterChefContract, useMiniChefV2Contract } from '../../hooks/useContract'
 import { toV2LiquidityToken, useTrackedTokenPairs } from '../../state/user/hooks'
 
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 import { SimpleDots as Dots } from 'kashi/components'
 import { Helmet } from 'react-helmet'
 import Menu from './Menu'
@@ -214,7 +214,7 @@ export default function Yield(): JSX.Element {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Yield`)} | Cyswap</title>
+                <title>{i18n._(t`Yield`)} | Quest3</title>
                 <meta name="description" content="Farm CyCoin by staking LP (Liquidity Provider) tokens" />
             </Helmet>
             <div className="container grid grid-cols-4 gap-4 mx-auto">

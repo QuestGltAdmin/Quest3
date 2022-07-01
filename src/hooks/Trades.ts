@@ -1,4 +1,4 @@
-import { ChainId, Currency, CurrencyAmount, Pair, Token, Trade } from 'quest-cyswap-sdk1'
+import { ChainId, Currency, CurrencyAmount, Pair, Token, Trade } from 'quest-quest3-sdk'
 import { useMemo } from 'react'
 import { useUserSingleHopOnly } from 'state/user/hooks'
 import { isTradeBetter } from 'utils/trades'

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ChainId, Currency } from 'quest-cyswap-sdk1'
+import { ChainId, Currency } from 'quest-quest3-sdk'
 import Settings from './Settings'
 import { NavLink } from './Link'
 import animationData from '../assets/animation/settings-slider.json'

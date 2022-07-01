@@ -1,4 +1,4 @@
-import { Currency, ETHER, JSBI, TokenAmount } from 'quest-cyswap-sdk1'
+import { Currency, ETHER, JSBI, TokenAmount } from 'quest-quest3-sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import { Plus } from 'react-feather'
 import { Text } from 'rebass'
@@ -84,7 +84,7 @@ export default function PoolFinder() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Find Pool`)} | Cyswap</title>
+                <title>{i18n._(t`Find Pool`)} | Quest3</title>
             </Helmet>
             <div className="relative w-full max-w-lg rounded bg-dark-900 shadow-liquidity-purple-glow">
                 <FindPoolTabs />

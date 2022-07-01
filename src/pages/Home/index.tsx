@@ -74,7 +74,7 @@ export default function Home() {
                     <div className='row align-items-center'>
                         <div className='col-lg-5 offset-lg-1 col-md-6'>
                             <div>
-                                <h2 className="common-heading">CySwap Protocol</h2>
+                                <h2 className="common-heading">Quest3 Protocol</h2>
                                 <p className="commonpera">The CyCoin Swap Protocol is a public entity owned and governed by all-inclusive CyCoin holders. Designed with simplicity, speed, affordability and security in mind, CyCoin SWAP allows users to diversify market offerings & make increasing gains. </p>
                             </div>
                         </div>
@@ -91,7 +91,7 @@ export default function Home() {
                     <div className='col-lg-5 order-2 col-md-6'>
                         <div>
                             <h2 className="common-heading">Explore Emerging Networks of Defi Apps</h2>
-                            <p className="commonpera">Cyswap is a decentralized platform which is open & accessible for all including developers, traders, investors & liquidity providers. They can together participate, swap their tokens, add liquidity to existing pools in the platform and can have exciting opportunities.</p>
+                            <p className="commonpera">Quest3 is a decentralized platform which is open & accessible for all including developers, traders, investors & liquidity providers. They can together participate, swap their tokens, add liquidity to existing pools in the platform and can have exciting opportunities.</p>
                             {/* <div className="mt-3">
                                 <Link className="common-btn" to="/swap">Get Started</Link>
                             </div> */}
@@ -110,7 +110,7 @@ export default function Home() {
                     <div className='row'>
                         <div className='col-md-8'>
                             <div>
-                                <h2 className="common-heading">Best Popular Crypto Pairs <br /> On CySwap</h2>
+                                <h2 className="common-heading">Best Popular Crypto Pairs <br /> On Quest3</h2>
                                 <p className="commonpera mb-5">Choose your favorite crypto pairs & start trading today!</p>
                             </div>
                         </div>
@@ -345,8 +345,8 @@ export default function Home() {
                     <div className='row'>
                         <div className='col-md-8'>
                             <div>
-                                <h2 className="common-heading">How to Use CySwap?</h2>
-                                <p className="commonpera">Swapping is a simple process exchanging one token for another. Prices of the asset depend on the supply and demand of the assets, which is community driven. Though there are some factors like slippage and price impact that can affect your trade, hence we also provide extra features for you to control your trades. Get started with CySwap in 4 simple steps-</p>
+                                <h2 className="common-heading">How to Use Quest3?</h2>
+                                <p className="commonpera">Swapping is a simple process exchanging one token for another. Prices of the asset depend on the supply and demand of the assets, which is community driven. Though there are some factors like slippage and price impact that can affect your trade, hence we also provide extra features for you to control your trades. Get started with Quest3 in 4 simple steps-</p>
 
                             </div>
                         </div>
@@ -357,7 +357,7 @@ export default function Home() {
                                 <span>01</span>
                                 {/* <h4>Connect Wallet</h4> */}
                                 <br></br>
-                                <p>Connect to CySwap using a wallet like Metamask.</p>
+                                <p>Connect to Quest3 using a wallet like Metamask.</p>
                             </div>
                         </div>
                         <div className='col-lg-3 col-md-6'>

@@ -9,7 +9,7 @@ export default function TradeLayout() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Trade`)} | Cyswap</title>
+                <title>{i18n._(t`Trade`)} | Quest3</title>
                 <meta
                     name="description"
                     content={i18n._(t`CyCoin allows for swapping of ERC20 compatible tokens across multiple networks`)}
@@ -17,7 +17,7 @@ export default function TradeLayout() {
             </Helmet>
             <div className="w-full">
                 <TradingViewWidget
-                    symbol="BINANCE:CYYUSDT"
+                    symbol="BINANCE:QUESTUSDT"
                     theme={Themes.DARK}
                     locale="en"
                     autosize={false}

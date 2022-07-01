@@ -1,4 +1,4 @@
-import { Token, TokenAmount, WETH } from 'quest-cyswap-sdk1'
+import { Token, TokenAmount, WETH } from 'quest-quest3-sdk'
 import React, { useContext } from 'react'
 import { Link, RouteComponentProps, withRouter } from 'react-router-dom'
 import { Text } from 'rebass'

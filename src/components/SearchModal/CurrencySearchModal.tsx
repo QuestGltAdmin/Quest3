@@ -1,4 +1,4 @@
-import { Currency, Token } from 'quest-cyswap-sdk1'
+import { Currency, Token } from 'quest-quest3-sdk'
 import { TokenList } from '@uniswap/token-lists'
 import usePrevious from 'hooks/usePrevious'
 import React, { useCallback, useEffect, useState } from 'react'

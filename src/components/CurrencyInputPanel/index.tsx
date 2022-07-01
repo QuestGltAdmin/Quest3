@@ -1,4 +1,4 @@
-import { Currency, Pair, ChainId } from 'quest-cyswap-sdk1'
+import { Currency, Pair, ChainId } from 'quest-quest3-sdk'
 import { darken } from 'polished'
 import React, { useCallback, useState } from 'react'
 import styled from 'styled-components'

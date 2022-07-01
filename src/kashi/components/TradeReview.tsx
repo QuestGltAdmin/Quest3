@@ -1,5 +1,5 @@
 import React from 'react'
-import { Trade } from 'quest-cyswap-sdk1'
+import { Trade } from 'quest-quest3-sdk'
 import { computeSlippageAdjustedAmounts, computeTradePriceBreakdown } from 'utils/prices'
 import QuestionHelper from 'components/QuestionHelper'
 import FormattedPriceImpact from 'components/swap/FormattedPriceImpact'

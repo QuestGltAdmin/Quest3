@@ -1,4 +1,4 @@
-import { ChainId, Currency, currencyEquals, ETHER, Token } from 'quest-cyswap-sdk1'
+import { ChainId, Currency, currencyEquals, ETHER, Token } from 'quest-quest3-sdk'
 import React from 'react'
 import { Text } from 'rebass'
 import styled from 'styled-components'

@@ -1,4 +1,4 @@
-import { Currency, Token } from 'quest-cyswap-sdk1'
+import { Currency, Token } from 'quest-quest3-sdk'
 import { ButtonEmpty } from 'components/ButtonLegacy'
 import Card, { OutlineCard } from 'components/CardLegacy'
 import { AutoColumn } from 'components/Column'

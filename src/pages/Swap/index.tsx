@@ -3,7 +3,7 @@ import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from '../../
 import { AutoRow, RowBetween } from '../../components/Row'
 import { ButtonConfirmed, ButtonError, ButtonLight, ButtonPrimary } from '../../components/ButtonLegacy'
 import Card, { DarkCard, GreyCard } from '../../components/CardLegacy'
-import { ChainId, CurrencyAmount, JSBI, Token, Trade } from 'quest-cyswap-sdk1'
+import { ChainId, CurrencyAmount, JSBI, Token, Trade } from 'quest-quest3-sdk'
 import Column, { AutoColumn } from '../../components/Column'
 import { LinkStyledButton, TYPE } from '../../theme'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
@@ -306,7 +306,7 @@ export default function Swap() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Swap`)} | Cyswap</title>
+                <title>{i18n._(t`Swap`)} | Quest3</title>
                 <meta
                     name="description"
                     content="Switch allows for swapping of ERC20 compatible tokens across multiple networks"
@@ -632,7 +632,7 @@ export default function Swap() {
                     {/* Banner */}
                     {/* <a
                         href={
-                            'https://app.cyswap.com/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0xe9f84de264e91529af07fa2c746e934397810334'
+                            'https://app.quest3.com/swap?inputCurrency=0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48&outputCurrency=0xe9f84de264e91529af07fa2c746e934397810334'
                         }
                         className="hidden sm:block w-full cursor-pointer mt-4 py-1 rounded"
                         style={{
@@ -657,7 +657,7 @@ export default function Swap() {
                                     <Trans>Missed the Auction?</Trans>
                                 </div>
                                 <div className="text-xs">
-                                    <Trans>Swap for SAK3 token on CYY now. Click here to swap.</Trans>
+                                    <Trans>Swap for SAK3 token on QUEST now. Click here to swap.</Trans>
                                 </div>
                             </div>
                         </div>
@@ -665,7 +665,7 @@ export default function Swap() {
                             <span className="text-high-emphesis font-normal" style={{ lineHeight: 1.3, maxWidth: 250 }}>
                                 <Trans>
                                     Pour a hot bowl of MISO, the new <span className="font-bold">token launchpad</span>{' '}
-                                    from CYY
+                                    from QUEST
                                 </Trans>
                             </span>
                             <div style={{ maxWidth: 195 }}>

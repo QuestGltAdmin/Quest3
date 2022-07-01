@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from 'quest-cyswap-sdk1'
+import { CurrencyAmount, ETHER, JSBI } from 'quest-quest3-sdk'
 import { MIN_ETH } from '../constants'
 
 /**

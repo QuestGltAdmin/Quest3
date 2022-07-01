@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount } from 'quest-cyswap-sdk1'
+import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount } from 'quest-quest3-sdk'
 import { useMemo } from 'react'
 import ERC20_INTERFACE from '../../constants/abis/erc20'
 import { useActiveWeb3React } from '../../hooks/useActiveWeb3React'
@@ -6,7 +6,7 @@ import { useAllTokens } from '../../hooks/Tokens'
 import { useMulticallContract } from '../../hooks/useContract'
 import { isAddress } from '../../utils'
 import { useMultipleContractSingleData, useSingleContractMultipleData } from '../multicall/hooks'
-import { CYY } from './../../constants/index'
+import { QUEST } from './../../constants/index'
 
 /**
  * Returns a map of the given addresses to their eventually consistent ETH balances.
@@ -136,7 +136,7 @@ export function useAllTokenBalances(): { [tokenAddress: string]: TokenAmount | u
 export function useAggregateUniBalance(): TokenAmount | undefined {
     const { account, chainId } = useActiveWeb3React()
 
-    const uni = chainId ? CYY[chainId] : undefined
+    const uni = chainId ? QUEST[chainId] : undefined
 
     const uniBalance: TokenAmount | undefined = useTokenBalance(account ?? undefined, uni)
 

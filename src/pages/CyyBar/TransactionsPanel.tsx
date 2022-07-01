@@ -174,7 +174,7 @@ const Transaction = ({ date, type, amount, txHash }: any) => (
     <>
         <Item>{date}</Item>
         <Item>{type}</Item>
-        <Item>{amount.concat(' CYY')}</Item>
+        <Item>{amount.concat(' QUEST')}</Item>
         <Item>
             <ExternalLink className="" href={`https://etherscan.io/tx/${txHash}`}>
                 <p className="hidden md:block relative -top-6 whitespace-nowrap text-cyan-blue hover:underline">

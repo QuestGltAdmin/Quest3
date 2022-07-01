@@ -8,7 +8,7 @@ import { ChevronLeft, User, Copy, ExternalLink } from 'react-feather'
 import { Button, Dots } from 'components'
 import { useActiveWeb3React } from '../../hooks/useActiveWeb3React'
 import { useETHBalances } from 'state/wallet/hooks'
-import { Currency } from 'quest-cyswap-sdk1'
+import { Currency } from 'quest-quest3-sdk'
 import { t } from '@lingui/macro'
 import { useLingui } from '@lingui/react'
 
@@ -36,7 +36,7 @@ export default function Transactions() {
     return (
         <>
             <Helmet>
-                <title>{i18n._(t`Transactions`)} | cyswap</title>
+                <title>{i18n._(t`Transactions`)} | quest3</title>
             </Helmet>
 
             {/* <div className="w-full max-w-2xl">

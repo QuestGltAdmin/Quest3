@@ -12,17 +12,17 @@ import {
     SUSHI_ADDRESS,
     TIMELOCK_ADDRESS,
     WETH
-} from 'quest-cyswap-sdk1'
+} from 'quest-quest3-sdk'
 import {
     BENTOBOX_ADDRESS,
     BORING_HELPER_ADDRESS,
     CHAINLINK_ORACLE_ADDRESS,
     KASHI_ADDRESS,
-    CYYSWAP_MULTISWAPPER_ADDRESS,
-    CYYSWAP_SWAPPER_ADDRESS
+    QUESTSWAP_MULTISWAPPER_ADDRESS,
+    QUESTSWAP_SWAPPER_ADDRESS
 } from 'kashi'
 import { FAUCET_ABI, FAUCET_ADDRESS } from '../constants/abis/faucet'
-import { MERKLE_DISTRIBUTOR_ADDRESS, CYY } from '../constants'
+import { MERKLE_DISTRIBUTOR_ADDRESS, QUEST } from '../constants'
 import { MIGRATOR_ABI, MIGRATOR_ADDRESS } from '../constants/abis/migrator'
 import { MULTICALL_ABI, MULTICALL_NETWORKS } from '../constants/multicall'
 import { V1_EXCHANGE_ABI, V1_FACTORY_ABI, V1_FACTORY_ADDRESSES } from '../constants/v1'
@@ -149,7 +149,7 @@ export function useMerkleDistributorContract(): Contract | null {
 
 export function useUniContract(): Contract | null {
     const { chainId } = useActiveWeb3React()
-    return useContract(chainId ? CYY[chainId]?.address : undefined, UNI_ABI, true)
+    return useContract(chainId ? QUEST[chainId]?.address : undefined, UNI_ABI, true)
 }
 
 export function useStakingContract(stakingAddress?: string, withSignerIfPossible?: boolean): Contract | null {
@@ -249,7 +249,7 @@ export function useKashiPairContract(withSignerIfPossible?: boolean): Contract |
 
 export function useCyySwapSwapper(): Contract | null {
     const { chainId } = useActiveWeb3React()
-    return useContract(chainId && CYYSWAP_SWAPPER_ADDRESS[chainId], BASE_SWAPPER_ABI, false)
+    return useContract(chainId && QUESTSWAP_SWAPPER_ADDRESS[chainId], BASE_SWAPPER_ABI, false)
 }
 
 export function useChainlinkOracle(): Contract | null {
@@ -458,7 +458,7 @@ export function useDashboard2Contract(): Contract | null {
 
 export function useCyySwapMultiSwapper(): Contract | null {
     const { chainId } = useActiveWeb3React()
-    return useContract(chainId && CYYSWAP_MULTISWAPPER_ADDRESS[chainId], SUSHISWAP_MULTISWAPPER_ABI)
+    return useContract(chainId && QUESTSWAP_MULTISWAPPER_ADDRESS[chainId], SUSHISWAP_MULTISWAPPER_ABI)
 }
 
 export function useQuickSwapFactoryContract(): Contract | null {

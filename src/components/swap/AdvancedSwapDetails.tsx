@@ -1,4 +1,4 @@
-import { Trade, TradeType, ChainId } from 'quest-cyswap-sdk1'
+import { Trade, TradeType, ChainId } from 'quest-quest3-sdk'
 import { useActiveWeb3React } from 'hooks/useActiveWeb3React'
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
@@ -81,7 +81,7 @@ function TradeSummary({ trade, allowedSlippage }: { trade: Trade; allowedSlippag
                         <div className="text-secondary text-sm">{i18n._(t`You Save`)}</div>
                         <QuestionHelper
                             text={i18n._(
-                                t`Your saving as compared to Cyswap.`
+                                t`Your saving as compared to Quest3.`
                             )}
                         />
                     </RowFixed>
@@ -157,7 +157,7 @@ export function AdvancedSwapDetails({ trade }: AdvancedSwapDetailsProps) {
                                     href={`${
                                         chainId && ANALYTICS_URL[chainId]
                                             ? ANALYTICS_URL[chainId]
-                                            : 'https://analytics.cyswap.com'
+                                            : 'https://analytics.quest3.com'
                                     }/pairs/${trade.route.pairs[0].liquidityToken.address}`}
                                 >
                                     {i18n._(t`View pair analytics`)}

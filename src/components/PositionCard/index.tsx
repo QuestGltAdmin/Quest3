@@ -1,4 +1,4 @@
-import { JSBI, Pair, Percent, TokenAmount } from 'quest-cyswap-sdk1'
+import { JSBI, Pair, Percent, TokenAmount } from 'quest-quest3-sdk'
 import { darken, transparentize } from 'polished'
 import React, { useState } from 'react'
 import { ChevronDown, ChevronUp } from 'react-feather'

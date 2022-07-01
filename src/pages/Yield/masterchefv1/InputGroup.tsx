@@ -1,5 +1,5 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { MASTERCHEF_ADDRESS, Token } from 'quest-cyswap-sdk1'
+import { MASTERCHEF_ADDRESS, Token } from 'quest-quest3-sdk'
 import { Input as NumericalInput } from '../../../components/NumericalInput'
 import { Fraction } from '../../../entities'
 import { useActiveWeb3React } from '../../../hooks/useActiveWeb3React'
@@ -216,7 +216,7 @@ export default function InputGroup({
                                 setPendingTx(false)
                             }}
                         >
-                            {i18n._(t`Harvest ${formattedNum(pending)} CYCOIN `)}
+                            {i18n._(t`Harvest ${formattedNum(pending)} QUESTCOIN `)}
                         </Button>
                     </div>
                 )}

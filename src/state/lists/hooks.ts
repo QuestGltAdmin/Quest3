@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'quest-cyswap-sdk1'
+import { ChainId, Token } from 'quest-quest3-sdk'
 import { Tags, TokenInfo, TokenList } from '@uniswap/token-lists'
 
 import { AppState } from '../index'

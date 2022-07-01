@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, currencyEquals, ETHER, Token } from 'quest-cyswap-sdk1'
+import { Currency, CurrencyAmount, currencyEquals, ETHER, Token } from 'quest-quest3-sdk'
 import { LightGreyCard } from 'components/CardLegacy'
 import QuestionHelper from 'components/QuestionHelper'
 import useTheme from 'hooks/useTheme'

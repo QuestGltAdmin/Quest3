@@ -4,7 +4,7 @@ import { useActiveWeb3React } from './useActiveWeb3React'
 import { useIsTransactionPending, useTransactionAdder } from '../state/transactions/hooks'
 import useLPTokensState, { LPTokensState } from './useLPTokensState'
 import useCyyRoll from './useCyyRoll'
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 
 export type MigrateMode = 'permit' | 'approve'
 
@@ -53,7 +53,7 @@ const useMigrateState: () => MigrateState = () => {
             }
 
             addTransaction(tx, {
-                summary: `Migrate ${exchange} ${state.selectedLPToken.symbol} liquidity to CySwap`
+                summary: `Migrate ${exchange} ${state.selectedLPToken.symbol} liquidity to Quest3`
             })
             setPendingMigrationHash(tx.hash)
 

@@ -3,7 +3,7 @@ import { TransactionReviewView, WarningsView } from 'kashi/components'
 import { useActiveWeb3React } from 'hooks/useActiveWeb3React'
 import { BigNumber } from '@ethersproject/bignumber'
 import { minimum, e10, maximum, ZERO } from 'kashi/functions/math'
-import { WETH } from 'quest-cyswap-sdk1'
+import { WETH } from 'quest-quest3-sdk'
 import { KashiContext } from 'kashi/context'
 import { KashiCooker, TransactionReview, Warning, Warnings } from 'kashi/entities'
 import { toAmount, toShare } from 'kashi/functions/bentobox'
@@ -18,7 +18,7 @@ import { useTradeExactIn, useTradeExactOut } from 'hooks/Trades'
 import { computeSlippageAdjustedAmounts, computeTradePriceBreakdown, warningSeverity } from 'utils/prices'
 import { Field } from 'state/swap/actions'
 import { KashiApproveButton, TokenApproveButton } from 'kashi/components/Button'
-import { CYYSWAP_MULTISWAPPER_ADDRESS, CYYSWAP_MULTI_EXACT_SWAPPER_ADDRESS } from 'kashi/constants'
+import { QUESTSWAP_MULTISWAPPER_ADDRESS, QUESTSWAP_MULTI_EXACT_SWAPPER_ADDRESS } from 'kashi/constants'
 import { ethers } from 'ethers'
 import { defaultAbiCoder } from '@ethersproject/abi'
 
@@ -212,7 +212,7 @@ export default function Repay({ pair }: RepayProps) {
             cooker.removeCollateral(pair.userCollateralShare, true)
             cooker.bentoTransferCollateral(
                 pair.userCollateralShare,
-                CYYSWAP_MULTI_EXACT_SWAPPER_ADDRESS[chainId || 1]
+                QUESTSWAP_MULTI_EXACT_SWAPPER_ADDRESS[chainId || 1]
             )
             cooker.repayShare(pair.userBorrowPart)
 
@@ -244,7 +244,7 @@ export default function Repay({ pair }: RepayProps) {
             // console.log('encoded', data)
 
             cooker.action(
-                CYYSWAP_MULTI_EXACT_SWAPPER_ADDRESS[chainId || 1],
+                QUESTSWAP_MULTI_EXACT_SWAPPER_ADDRESS[chainId || 1],
                 ZERO,
                 ethers.utils.hexConcat([ethers.utils.hexlify('0x3087d742'), data]),
                 true,

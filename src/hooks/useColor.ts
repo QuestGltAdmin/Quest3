@@ -1,4 +1,4 @@
-import { ChainId, Token } from 'quest-cyswap-sdk1'
+import { ChainId, Token } from 'quest-quest3-sdk'
 import Vibrant from 'node-vibrant'
 import { shade } from 'polished'
 import { useLayoutEffect, useState } from 'react'

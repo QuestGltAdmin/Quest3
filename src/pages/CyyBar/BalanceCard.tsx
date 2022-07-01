@@ -36,7 +36,7 @@ export default function BalanceCard({
                                 {/* {formatFromBalance(xCyyBalance.value)} */}
                                 {parseFloat(formatFromBalance(xCyyBalance.value)).toFixed(2)}
                             </p>
-                            <p className="text-caption2 md:text-caption text-primary">xCYY</p>
+                            <p className="text-caption2 md:text-caption text-primary">xQUEST</p>
                         </div>
                     </div>
                 </div>
@@ -56,7 +56,7 @@ export default function BalanceCard({
                                 {parseFloat(formatFromBalance(cyyBalance.value)).toFixed(2)}
                                 {/* {cyyEarnings.toPrecision(7)} */}
                             </p>
-                            <p className="text-caption2 md:text-caption text-primary">CYY</p>
+                            <p className="text-caption2 md:text-caption text-primary">QUEST</p>
                         </div>
                     </div>
                 </div>

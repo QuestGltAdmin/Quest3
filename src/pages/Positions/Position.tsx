@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { JSBI, Pair, Percent, TokenAmount } from 'quest-cyswap-sdk1'
+import { JSBI, Pair, Percent, TokenAmount } from 'quest-quest3-sdk'
 import { useActiveWeb3React } from '../../hooks/useActiveWeb3React'
 import { unwrappedToken } from 'utils/wrappedCurrency'
 import { useTokenBalance } from '../../state/wallet/hooks'

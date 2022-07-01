@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { WETH } from 'quest-cyswap-sdk1'
+import { WETH } from 'quest-quest3-sdk'
 import { useActiveWeb3React } from 'hooks/useActiveWeb3React'
 import { ApprovalState, useApproveCallback } from 'hooks/useApproveCallback'
 import { Alert, Button, Checkbox, Dots } from 'components'
@@ -7,7 +7,7 @@ import Badge from 'components/Badge'
 import TransactionReviewView from 'kashi/components/TransactionReview'
 import { KashiCooker } from 'kashi/entities/KashiCooker'
 import { Warning, Warnings } from 'kashi/entities/Warnings'
-import { CYYSWAP_MULTISWAPPER_ADDRESS } from 'kashi/constants'
+import { QUESTSWAP_MULTISWAPPER_ADDRESS } from 'kashi/constants'
 import { KashiContext } from 'kashi/context'
 import WarningsView from 'kashi/components/Warnings'
 import { useExpertModeManager, useUserSlippageTolerance } from 'state/user/hooks'
@@ -241,7 +241,7 @@ export default function Borrow({ pair }: BorrowProps) {
             cooker.borrow(
                 borrowValue.toBigNumber(pair.asset.decimals),
                 swap || useBentoBorrow,
-                swap ? CYYSWAP_MULTISWAPPER_ADDRESS[chainId || 1] : ''
+                swap ? QUESTSWAP_MULTISWAPPER_ADDRESS[chainId || 1] : ''
             )
         }
         if (borrowValueSet && trade) {
@@ -275,7 +275,7 @@ export default function Borrow({ pair }: BorrowProps) {
             )
 
             cooker.action(
-                CYYSWAP_MULTISWAPPER_ADDRESS[chainId || 1],
+                QUESTSWAP_MULTISWAPPER_ADDRESS[chainId || 1],
                 ZERO,
                 ethers.utils.hexConcat([ethers.utils.hexlify('0x3087d742'), data]),
                 false,

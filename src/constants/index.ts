@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WETH } from 'quest-cyswap-sdk1'
+import { ChainId, JSBI, Percent, Token, WETH } from 'quest-quest3-sdk'
 import { fortmatic, injected, lattice, portis, torus, walletconnect, walletlink } from '../connectors'
 
 import { AbstractConnector } from '@web3-react/abstract-connector'
@@ -21,40 +21,40 @@ export const PROPOSAL_LENGTH_IN_SECS = AVERAGE_BLOCK_TIME_IN_SECS * PROPOSAL_LEN
 
 export const TIMELOCK_ADDRESS = '0x1a9C8182C09F50C8318d769245beA52c32BE35BC'
 
-export const CYY: ChainTokenMap = {
+export const QUEST: ChainTokenMap = {
     [ChainId.MAINNET]: new Token(
         ChainId.MAINNET,
         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',  //ADDRESS NEED TO UPDATE
         18,
-        'CYY',
+        'QUEST',
         'Cycoin'
     ),
     [ChainId.MATIC]: new Token(
         ChainId.MATIC,
         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',  //address need to update
         18,
-        'CYY',
+        'QUEST',
         'Cycoin'
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
         '0x5e88777e5956CBf076500E75b09aCfE8f09BC9ca',
         18,
-        'CYY',
+        'QUEST',
         'Cycoin'
     ),
     [ChainId.BSC_TESTNET]: new Token(
         ChainId.BSC_TESTNET,
         '0x1Da4EbB979A6925159eAc5Ad8B675B9ED75b499F',
         18,
-        'CYY',
+        'QUEST',
         'Cycoin'
     ),
     [ChainId.BSC]: new Token(
         ChainId.BSC,
         '0xC456D84D202FcB97E29Fc2dce20aC613434C8065',  
         10,
-        'CYY',
+        'QUEST',
         'Cycoin'
     )
 
@@ -64,40 +64,40 @@ export const CYY: ChainTokenMap = {
 
 
 
-export const xCYY: ChainTokenMap = {
+export const xQUEST: ChainTokenMap = {
     [ChainId.MAINNET]: new Token(
         ChainId.MAINNET,
         '0xbea6aff7067d1db51145039c6484a9b670c705ad',  //address need to change
          18,
-        'xCYY',
+        'xQUEST',
         'CyBar'
     ),
     [ChainId.MATIC]: new Token(
         ChainId.MATIC,
         '0xbea6aff7067d1db51145039c6484a9b670c705ad',     //address need to change
          18,
-        'xCYY',
+        'xQUEST',
         'CyBar'
     ),
     [ChainId.BSC]: new Token(
         ChainId.BSC,
         '0xAF53b5f1AE51ae5Fe554912A7a2649Ebb90074E7',     
          18,
-        'xCYY',
+        'xQUEST',
         'CyBar'
     ),
     [ChainId.BSC_TESTNET]: new Token(
         ChainId.BSC_TESTNET,
         '0x82C6727ee76f5A03bAA1c4372A848EB5b7C5E8A5',
         18,
-        'xCYY',
+        'xQUEST',
         'CyBar'
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
         '0x00EAbc1D044764cc9e959954698426326247b1c4',
         18,
-        'xCYY',
+        'xQUEST',
         'CyBar'
     )
 }
@@ -282,7 +282,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
         [CVXCRV.address]: [CRV, WETH[ChainId.MAINNET]]
     },
     [ChainId.MATIC]: {
-        [MATIC.TEL.address]: [MATIC.CYY, MATIC.AAVE],
+        [MATIC.TEL.address]: [MATIC.QUEST, MATIC.AAVE],
         [MATIC.FXS.address]: [MATIC.FRAX]
     }
 }
@@ -351,7 +351,7 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
         name: 'MetaMask',
         iconName: 'metamask.png',
         description: 'Open in MetaMask app.',
-        href: 'https://metamask.app.link/dapp/cyswap.com',
+        href: 'https://metamask.app.link/dapp/quest3.com',
         color: '#E8831D',
         mobile: true,
         mobileOnly: true,
@@ -469,9 +469,9 @@ export const BASE_SWAPPER: { [chainId in ChainId]?: string } = {
 export const BORING_HELPER_ADDRESS = '0x11Ca5375AdAfd6205E41131A4409f182677996E6'
 
 export const ANALYTICS_URL: { [chainId in ChainId]?: string } = {
-    [ChainId.MAINNET]: 'https://analytics.cyswap.com',
-    [ChainId.MATIC]: 'https://analytics-polygon.cyswap.com',
-    [ChainId.FANTOM]: 'https://analytics-ftm.cyswap.com',
-    [ChainId.BSC]: 'https://analytics-bsc.cyswap.com',
-    [ChainId.XDAI]: 'https://analytics-xdai.cyswap.com'
+    [ChainId.MAINNET]: 'https://analytics.quest3.com',
+    [ChainId.MATIC]: 'https://analytics-polygon.quest3.com',
+    [ChainId.FANTOM]: 'https://analytics-ftm.quest3.com',
+    [ChainId.BSC]: 'https://analytics-bsc.quest3.com',
+    [ChainId.XDAI]: 'https://analytics-xdai.quest3.com'
 }

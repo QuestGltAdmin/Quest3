@@ -1,12 +1,12 @@
 import { TransactionResponse } from '@ethersproject/providers'
-import { ChainId, JSBI, TokenAmount } from 'quest-cyswap-sdk1'
+import { ChainId, JSBI, TokenAmount } from 'quest-quest3-sdk'
 import { useEffect, useState } from 'react'
 import { useActiveWeb3React } from '../../hooks/useActiveWeb3React'
 import { useMerkleDistributorContract } from '../../hooks/useContract'
 import { calculateGasMargin, isAddress } from '../../utils'
 import { useSingleCallResult } from '../multicall/hooks'
 import { useTransactionAdder } from '../transactions/hooks'
-import { MERKLE_ROOT, CYY } from './../../constants/index'
+import { MERKLE_ROOT, QUEST } from './../../constants/index'
 
 interface UserClaimData {
     index: number
@@ -86,7 +86,7 @@ export function useUserUnclaimedAmount(account: string | null | undefined): Toke
     const userClaimData = useUserClaimData(account)
     const canClaim = useUserHasAvailableClaim(account)
 
-    const cyy = chainId ? CYY[chainId] : undefined
+    const cyy = chainId ? QUEST[chainId] : undefined
 
     // console.log('claimStats:', {
     //   canClaim: canClaim,
@@ -125,7 +125,7 @@ export function useClaimCallback(
                 .claim(...args, { value: null, gasLimit: calculateGasMargin(estimatedGasLimit) })
                 .then((response: TransactionResponse) => {
                     addTransaction(response, {
-                        summary: `Claimed ${unClaimedAmount?.toSignificant(4)} CYY`,
+                        summary: `Claimed ${unClaimedAmount?.toSignificant(4)} QUEST`,
                         claim: { recipient: account }
                     })
                     return response.hash

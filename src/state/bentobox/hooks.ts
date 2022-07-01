@@ -1,4 +1,4 @@
-import { Currency, Token, WETH } from 'quest-cyswap-sdk1'
+import { Currency, Token, WETH } from 'quest-quest3-sdk'
 import { ZERO, e10, easyAmount, toAmount } from 'kashi/functions'
 import { useBentoBoxContract, useBoringHelperContract, useContract } from '../../hooks/useContract'
 import { useCallback, useContext, useEffect, useMemo, useState } from 'react'

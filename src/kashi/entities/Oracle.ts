@@ -1,6 +1,6 @@
 import { CHAINLINK_MAPPING, CHAINLINK_ORACLE_ADDRESS } from 'kashi/constants'
 
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 import { e10 } from 'kashi/functions/math'
 import { ethers } from 'ethers'
 

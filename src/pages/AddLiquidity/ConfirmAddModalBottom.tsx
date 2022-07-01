@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from 'quest-cyswap-sdk1'
+import { Currency, CurrencyAmount, Fraction, Percent } from 'quest-quest3-sdk'
 import React from 'react'
 import { Text } from 'rebass'
 import { ButtonPrimary } from '../../components/ButtonLegacy'

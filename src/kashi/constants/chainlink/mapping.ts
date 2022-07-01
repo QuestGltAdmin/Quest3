@@ -1,4 +1,4 @@
-import { ChainId } from 'quest-cyswap-sdk1'
+import { ChainId } from 'quest-quest3-sdk'
 
 export type ChainlinkMappingList = {
     readonly [address: string]: {

@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from 'quest-cyswap-sdk1'
+import { Token, TokenAmount } from 'quest-quest3-sdk'
 import { ethers } from 'ethers'
 
 export default interface LPToken {

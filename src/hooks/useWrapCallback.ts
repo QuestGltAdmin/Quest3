@@ -1,4 +1,4 @@
-import { Currency, ETHER, WETH, currencyEquals } from 'quest-cyswap-sdk1'
+import { Currency, ETHER, WETH, currencyEquals } from 'quest-quest3-sdk'
 
 import { t } from '@lingui/macro'
 import { tryParseAmount } from '../state/swap/hooks'

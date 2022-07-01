@@ -1,4 +1,4 @@
-import { Price } from 'quest-cyswap-sdk1'
+import { Price } from 'quest-quest3-sdk'
 import React, { useContext } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

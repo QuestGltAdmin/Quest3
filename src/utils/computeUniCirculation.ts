@@ -1,4 +1,4 @@
-import { JSBI, Token, TokenAmount } from 'quest-cyswap-sdk1'
+import { JSBI, Token, TokenAmount } from 'quest-quest3-sdk'
 import { BigNumber } from 'ethers'
 import { STAKING_GENESIS } from '../state/stake/hooks'
 

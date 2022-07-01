@@ -1,4 +1,4 @@
-import { Token, TokenAmount, WETH } from 'quest-cyswap-sdk1'
+import { Token, TokenAmount, WETH } from 'quest-quest3-sdk'
 import { ApprovalState, useApproveCallback } from 'hooks/useApproveCallback'
 import { BENTOBOX_ADDRESS } from 'kashi'
 import { Button } from 'components'
