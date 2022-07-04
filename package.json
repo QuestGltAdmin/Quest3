@@ -1,7 +1,7 @@
 {
     "name": "@quest/interface",
     "description": "Quest Interface",
-    "homepage": "https://quest.com",
+    "homepage": "https://questswap3.netlify.app",
     "private": true,
     "lint-staged": {
         "*.{js,jsx,ts,tsx}": [
