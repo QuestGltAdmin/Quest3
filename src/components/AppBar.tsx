@@ -51,7 +51,7 @@ function AppBar(): JSX.Element {
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
                                         <NavLink to={'/'}>
-                                        <img src={Logo} alt="Quest3Coin" className="h-16 w-auto" />
+                                        <img src={Logo} alt="Quest3Coin" className="h-8 w-auto" />
                                         </NavLink>
                                     </div>
                                     <div className="hidden sm:block sm:ml-4">
