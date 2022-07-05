@@ -35,6 +35,7 @@ import Yield from './pages/Yield'
 //import MiniChefV2 from './pages/Yield/minichefv2'
 import Positions from './pages/Positions'
 import Transactions from './pages/Transactions'
+import HomePage from 'pages/Home Page'
 
 function Routes(): JSX.Element {
     const { chainId } = useActiveWeb3React()
@@ -84,6 +85,7 @@ function Routes(): JSX.Element {
             <Route exact strict path="/trade" component={Swap} />
             <Route exact strict path="/swap" component={Swap} />
             <Route exact strict path="/" component={Home} />
+            <Route exact strict path="/Home" component={HomePage} />
             <Route exact strict path="/swap/:outputCurrency" component={RedirectToSwap} />
             <Route exact strict path="/send" component={RedirectPathToSwapOnly} />
             <Route exact strict path="/find" component={PoolFinder} />
