@@ -3,6 +3,7 @@ import './styles/homepage.css'
 import '@fontsource/dm-sans/index.css'
 import 'react-tabs/style/react-tabs.css'
 import './bootstrap'
+import './styles/custom.css'
 
 import { createWeb3ReactRoot, Web3ReactProvider } from '@web3-react/core'
 import { KashiProvider } from 'kashi'
