@@ -63,7 +63,7 @@ export default function InputGroup({
 
     const [approvalState, approve] = useApproveCallback(
         tryParseAmount(depositValue, new Token(chainId || 1, pairAddressChecksum, balance.decimals, pairSymbol, '')),
-        '0xCf97aDd6d17f2953C4E6CE7C581C2599708da48A' //miniChef on Matic
+        '0xF11EA23A6b0EeaFd8121be38D4d370279d4621F7' //miniChef on Matic
     )
     //console.log('Approval:', approvalState, ApprovalState.NOT_APPROVED)
 

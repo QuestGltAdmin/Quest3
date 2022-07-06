@@ -31,7 +31,7 @@ const useFarms = () => {
             }),
             exchange_matic.query({
                 query: liquidityPositionSubsetQuery,
-                variables: { user: String('0xCf97aDd6d17f2953C4E6CE7C581C2599708da48A').toLowerCase() } //minichef
+                variables: { user: String('0xF11EA23A6b0EeaFd8121be38D4d370279d4621F7').toLowerCase() } //minichef
             }),
             sushiData.sushi.priceUSD(),
             exchange_matic.query({

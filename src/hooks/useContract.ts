@@ -186,10 +186,10 @@ export function useMasterChefV2Contract(withSignerIfPossible?: boolean): Contrac
     if (chainId) {
         switch (chainId) {
             case ChainId.RINKEBY:  // earlier it was MAINNET
-                address = '0xCf97aDd6d17f2953C4E6CE7C581C2599708da48A' // This was placed earlier 0xEF0881eC094552b2e128Cf945EF17a6752B4Ec5d
+                address = '0xF11EA23A6b0EeaFd8121be38D4d370279d4621F7' // This was placed earlier 0xEF0881eC094552b2e128Cf945EF17a6752B4Ec5d
                 break
             case ChainId.BSC_TESTNET:  // earlier it was MAINNET
-                address = '0xCf97aDd6d17f2953C4E6CE7C581C2599708da48A' // This was placed earlier 0xEF0881eC094552b2e128Cf945EF17a6752B4Ec5d
+                address = '0xF11EA23A6b0EeaFd8121be38D4d370279d4621F7' // This was placed earlier 0xEF0881eC094552b2e128Cf945EF17a6752B4Ec5d
                 break
         }
     }
@@ -202,10 +202,10 @@ export function useMiniChefV2Contract(withSignerIfPossible?: boolean): Contract 
     if (chainId) {
         switch (chainId) {
             case ChainId.RINKEBY:
-                address = '0xCf97aDd6d17f2953C4E6CE7C581C2599708da48A'
+                address = '0xF11EA23A6b0EeaFd8121be38D4d370279d4621F7'
                 break
             case ChainId.BSC_TESTNET:
-                address = '0xCf97aDd6d17f2953C4E6CE7C581C2599708da48A'
+                address = '0xF11EA23A6b0EeaFd8121be38D4d370279d4621F7'
                 break
         }
     }
