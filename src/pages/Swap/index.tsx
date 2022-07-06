@@ -619,7 +619,7 @@ export default function Swap() {
                     {/*                <img src={PolygonLogo} className="w-24 h-24 absolute top-2" alt="" />*/}
                     {/*                <div className="pl-32">*/}
                     {/*                    <div className="text-high-emphesis">*/}
-                    {/*                        {i18n._(t`Check out Quest3Coin on Polygon (Matic)`)}*/}
+                    {/*                        {i18n._(t`Check out Quest3 on Polygon (Matic)`)}*/}
                     {/*                    </div>*/}
                     {/*                    <div className="text-high-emphesis text-sm">*/}
                     {/*                        {i18n._(t`Click here to switch to Polygon using Metamask`)}*/}
@@ -657,7 +657,7 @@ export default function Swap() {
                                     <Trans>Missed the Auction?</Trans>
                                 </div>
                                 <div className="text-xs">
-                                    <Trans>Swap for SAK3 token on QUEST now. Click here to swap.</Trans>
+                                    <Trans>Swap for SAK3 token on QST3 now. Click here to swap.</Trans>
                                 </div>
                             </div>
                         </div>
@@ -665,7 +665,7 @@ export default function Swap() {
                             <span className="text-high-emphesis font-normal" style={{ lineHeight: 1.3, maxWidth: 250 }}>
                                 <Trans>
                                     Pour a hot bowl of MISO, the new <span className="font-bold">token launchpad</span>{' '}
-                                    from QUEST
+                                    from QST3
                                 </Trans>
                             </span>
                             <div style={{ maxWidth: 195 }}>

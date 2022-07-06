@@ -16,7 +16,7 @@ or visit [quest3.com](https://quest3.com/).
 ## Listing a token
 
 Please see the
-[quest-cyswap-default-token-list]
+[quest-quest3-default-token-list]
 repository.
 
 ## Development

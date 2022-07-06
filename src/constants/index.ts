@@ -21,41 +21,41 @@ export const PROPOSAL_LENGTH_IN_SECS = AVERAGE_BLOCK_TIME_IN_SECS * PROPOSAL_LEN
 
 export const TIMELOCK_ADDRESS = '0x1a9C8182C09F50C8318d769245beA52c32BE35BC'
 
-export const QUEST: ChainTokenMap = {
+export const QST3: ChainTokenMap = {
     [ChainId.MAINNET]: new Token(
         ChainId.MAINNET,
         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',  //ADDRESS NEED TO UPDATE
         18,
-        'QUEST',
-        'Quest3Coin'
+        'QST3',
+        'Quest3'
     ),
     [ChainId.MATIC]: new Token(
         ChainId.MATIC,
         '0x52B8E9296B3c605eA7e9ecF1d201254bc9D55F54',  //address need to update
         18,
-        'QUEST',
-        'Quest3Coin'
+        'QST3',
+        'Quest3'
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
         '0x5e88777e5956CBf076500E75b09aCfE8f09BC9ca',
         18,
-        'QUEST',
-        'Quest3Coin'
+        'QST3',
+        'Quest3'
     ),
     [ChainId.BSC_TESTNET]: new Token(
         ChainId.BSC_TESTNET,
-        '0x1Da4EbB979A6925159eAc5Ad8B675B9ED75b499F',
+        '0x1d3e64aa989a61c4d30c259dce391b784b55973b',
         18,
-        'QUEST',
-        'Quest3Coin'
+        'QST3',
+        'Quest3'
     ),
     [ChainId.BSC]: new Token(
         ChainId.BSC,
         '0xC456D84D202FcB97E29Fc2dce20aC613434C8065',  
         10,
-        'QUEST',
-        'Quest3Coin'
+        'QST3',
+        'Quest3'
     )
 
     
@@ -64,40 +64,40 @@ export const QUEST: ChainTokenMap = {
 
 
 
-export const xQUEST: ChainTokenMap = {
+export const xQST3: ChainTokenMap = {
     [ChainId.MAINNET]: new Token(
         ChainId.MAINNET,
         '0xbea6aff7067d1db51145039c6484a9b670c705ad',  //address need to change
          18,
-        'xQUEST',
+        'xQST3',
         'CyBar'
     ),
     [ChainId.MATIC]: new Token(
         ChainId.MATIC,
         '0xbea6aff7067d1db51145039c6484a9b670c705ad',     //address need to change
          18,
-        'xQUEST',
+        'xQST3',
         'CyBar'
     ),
     [ChainId.BSC]: new Token(
         ChainId.BSC,
         '0xAF53b5f1AE51ae5Fe554912A7a2649Ebb90074E7',     
          18,
-        'xQUEST',
+        'xQST3',
         'CyBar'
     ),
     [ChainId.BSC_TESTNET]: new Token(
         ChainId.BSC_TESTNET,
         '0x82C6727ee76f5A03bAA1c4372A848EB5b7C5E8A5',
         18,
-        'xQUEST',
+        'xQST3',
         'CyBar'
     ),
     [ChainId.RINKEBY]: new Token(
         ChainId.RINKEBY,
         '0x00EAbc1D044764cc9e959954698426326247b1c4',
         18,
-        'xQUEST',
+        'xQST3',
         'CyBar'
     )
 }
@@ -282,7 +282,7 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
         [CVXCRV.address]: [CRV, WETH[ChainId.MAINNET]]
     },
     [ChainId.MATIC]: {
-        [MATIC.TEL.address]: [MATIC.QUEST, MATIC.AAVE],
+        [MATIC.TEL.address]: [MATIC.QST3, MATIC.AAVE],
         [MATIC.FXS.address]: [MATIC.FRAX]
     }
 }

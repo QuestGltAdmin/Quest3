@@ -95,7 +95,7 @@ export default function Pool() {
                         <AutoColumn gap="md">
                             <RowBetween>
                                 <TYPE.white fontWeight={600} color={theme.text1}>
-                                    {i18n._(t`Helpful Quest3Coin Tools`)}
+                                    {i18n._(t`Helpful Quest3 Tools`)}
                                 </TYPE.white>
                             </RowBetween>
                             <RowBetween>
@@ -148,7 +148,7 @@ export default function Pool() {
                                     <RowFixed>
                                         {/* <DoubleCurrencyLogo currency0={currency0} currency1={currency1} margin={true} size={20} /> */}
                                         <Text fontWeight={500} fontSize={14}>
-                                            {i18n._(t`One click QUEST → xQUEST → aXQUEST`)}
+                                            {i18n._(t`One click QST3 → xQST3 → aXQST3`)}
                                         </Text>
                                     </RowFixed>
                                     <RowFixed>

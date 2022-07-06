@@ -213,7 +213,7 @@ const TokenBalance = ({ farm }: any) => {
                             </div>
                             <div className="flex flex-col pl-2 space-y-1">
                                 <div className="text-gray-500 text-xs">
-                                    {formattedNum(farm.sushiRewardPerDay)} Quest3Coin / day
+                                    {formattedNum(farm.sushiRewardPerDay)} Quest3 / day
                                 </div>
                                 <div className="text-gray-500 text-xs">
                                     {formattedNum(farm.secondaryRewardPerDay)} MATIC / day

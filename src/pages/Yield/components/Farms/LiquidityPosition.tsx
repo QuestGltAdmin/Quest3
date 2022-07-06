@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { formattedNum, formattedPercent } from '../../../../utils'
 import { DoubleLogo, Paper } from '../../components'
-import DEFAULT_TOKEN_LIST from 'quest-cyswap-default-token-list'
 import { MasterChefV1Details, MasterChefV2Details, MiniChefDetails } from '../Details'
 import { useActiveWeb3React } from '../../../../hooks/useActiveWeb3React'
 import { ChainId } from 'quest-quest3-sdk'
@@ -36,7 +35,7 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                         </div> 
                         <div className="hidden md:block text-sm sm:text-base ml-4 text-gray-500 text-right">
                             {/* TODO: remove hard coding */}
-                            {props.farm && props.farm.contract === 'masterchefv2' ? 'Quest3Coin & WETH' : 'QUESTCOIN'}
+                            {props.farm && props.farm.contract === 'masterchefv2' ? 'Quest3 & WETH' : 'QST3'}
                         </div>
                         {/* <div className="text-gray-500 text-sm sm:text-base text-right"> */}
                             {/* {formattedNum(props.farm.tvl, true)} */}
@@ -87,7 +86,7 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                                 {props.farm && (
                                     <>
                                         {/* <div className="text-gray-500 text-right font-semibold text-xs">
-                                            {formattedNum(props.farm.sushiRewardPerDay)} QUESTCOIN per day
+                                            {formattedNum(props.farm.sushiRewardPerDay)} QUEST3 per day
                                         </div>
                                         <div className="text-gray-500 text-right font-semibold text-xs">
                                             {formattedNum(props.farm.secondaryRewardPerDay)} WMATIC per day
@@ -97,7 +96,7 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                                 {props.farm &&(
                                     <>
                                         {/* <div className="text-gray-500 text-right font-semibold text-xs">
-                                            {formattedNum(props.farm.sushiRewardPerDay)} QUESTCOIN per day
+                                            {formattedNum(props.farm.sushiRewardPerDay)} QUEST3 per day
                                         </div>
                                         <div className="text-gray-500 text-right font-semibold text-xs">
                                             {formattedNum(props.farm.secondaryRewardPerDay)} ALCX per day
@@ -108,7 +107,7 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                                     <>
                                         <div className="text-gray-500 text-right font-semibold text-sm sm:text-sm">
                                             {/* {formattedNum(props.farm.sushiRewardPerDay)}  */}
-                                            2.15 QUESTCOIN
+                                            2.15 QUEST3
                                         </div>
                                         <div className="text-gray-500 text-right text-xs">per day</div>
                                     </>

@@ -110,8 +110,8 @@
         "postcss-preset-env": "^6.7.0",
         "prettier": "^1.17.0",
         "qs": "^6.9.4",
-        "quest-cyswap-default-token-list": "^1.0.10",
-        "quest-quest3-sdk": "1.0.0",
+        "quest-quest3-default-token-list": "^1.0.0",
+        "quest-quest3-sdk": "^1.0.3",
         "quest-switchswap-core": "1.0.2",
         "quest-switchswap-sushi-data": "^1.0.2",
         "react": "^17.0.2",
@@ -129,6 +129,7 @@
         "react-redux": "^7.2.0",
         "react-router-dom": "^5.2.0",
         "react-scripts": "4.0.3",
+        "react-slick": "^0.29.0",
         "react-spring": "^8.0.27",
         "react-syntax-highlighter": "^15.4.3",
         "react-tabs": "^3.2.1",
@@ -143,7 +144,6 @@
         "source-map-explorer": "^2.5.2",
         "start-server-and-test": "^1.11.0",
         "styled-components": "^4.2.0",
-        "react-slick": "^0.29.0",
         "supports-color": "^9.0.1",
         "swr": "^0.5.5",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4",
@@ -185,7 +185,7 @@
     "license": "GPL-3.0-or-later",
     "dependencies": {
         "@lufycz/sushi-data": "^2.0.0-canary-21",
-        "caniuse-lite": "^1.0.30001322",
-        "react-slick": "^0.29.0"
+        "@types/react-slick": "^0.23.10",
+        "caniuse-lite": "^1.0.30001322"
     }
 }

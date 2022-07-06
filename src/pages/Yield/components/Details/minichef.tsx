@@ -85,7 +85,7 @@ export default function InputGroup({
                             }}
                         >
                             <Trans>
-                                Harvest {formattedNum(pending)} QUESTCOIN & {formattedNum(reward)} ETH
+                                Harvest {formattedNum(pending)} QST3 & {formattedNum(reward)} ETH
                             </Trans>
                         </Button>
                     </div>

@@ -22,7 +22,7 @@ import {
     QUESTSWAP_SWAPPER_ADDRESS
 } from 'kashi'
 import { FAUCET_ABI, FAUCET_ADDRESS } from '../constants/abis/faucet'
-import { MERKLE_DISTRIBUTOR_ADDRESS, QUEST } from '../constants'
+import { MERKLE_DISTRIBUTOR_ADDRESS, QST3 } from '../constants'
 import { MIGRATOR_ABI, MIGRATOR_ADDRESS } from '../constants/abis/migrator'
 import { MULTICALL_ABI, MULTICALL_NETWORKS } from '../constants/multicall'
 import { V1_EXCHANGE_ABI, V1_FACTORY_ABI, V1_FACTORY_ADDRESSES } from '../constants/v1'
@@ -149,7 +149,7 @@ export function useMerkleDistributorContract(): Contract | null {
 
 export function useUniContract(): Contract | null {
     const { chainId } = useActiveWeb3React()
-    return useContract(chainId ? QUEST[chainId]?.address : undefined, UNI_ABI, true)
+    return useContract(chainId ? QST3[chainId]?.address : undefined, UNI_ABI, true)
 }
 
 export function useStakingContract(stakingAddress?: string, withSignerIfPossible?: boolean): Contract | null {

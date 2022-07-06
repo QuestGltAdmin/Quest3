@@ -87,7 +87,7 @@ export default function InputGroup({
                                 setPendingTx(false)
                             }}
                         >
-                            Harvest {formattedNum(pending)} QUEST & {formattedNum(reward)} ALCX
+                            Harvest {formattedNum(pending)} QST3 & {formattedNum(reward)} ALCX
                         </Button>
                     </div>
                 )}

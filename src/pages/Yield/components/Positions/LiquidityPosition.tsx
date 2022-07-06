@@ -37,7 +37,7 @@ const LiquidityPosition = ({ farm }: any) => {
                         <div className="flex justify-end items-center">
                             <div>
                                 <div className="text-right">{formattedNum(farm.pendingToken)} </div>
-                                <div className="text-secondary text-right">QUESTCOIN </div>
+                                <div className="text-secondary text-right">QUEST3 </div>
                             </div>
                         </div>
                     </div>

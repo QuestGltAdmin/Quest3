@@ -126,7 +126,7 @@ const useFarms = () => {
                     slpBalance: pool.slpBalance,
                     liquidityPair: pair,
                     rewardTokens: [
-                        '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2', //QUEST on Mainnet
+                        '0x6B3595068778DD592e39A122f4f5a5cF09C90fE2', //QST3 on Mainnet
                         '0xdBdb4d16EdA451D0503b854CF79D55697F90c8DF' // ALCX on Mainnet
                     ],
                     sushiRewardPerDay: rewardPerDay,

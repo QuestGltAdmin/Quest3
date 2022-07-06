@@ -80,7 +80,7 @@
 			{
 				"indexed": false,
 				"internalType": "uint256",
-				"name": "amountQUEST",
+				"name": "amountQST3",
 				"type": "uint256"
 			}
 		],

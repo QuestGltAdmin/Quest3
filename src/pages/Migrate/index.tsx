@@ -308,7 +308,7 @@ const MigrateV2 = () => {
         <>
             <Helmet>
                 <title>Migrate LP tokens | Quest3</title>
-                <meta name="description" content="Migrate LP tokens to Cyy LP tokens" />
+                <meta name="description" content="Migrate LP tokens to Quest3 LP tokens" />
             </Helmet>
 
             <div className="text-2xl text-primary1 text-center mb-8">{i18n._(t`Migrate ${exchange} Liquidity`)}</div>

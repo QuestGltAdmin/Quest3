@@ -143,30 +143,30 @@ export default function StakeCard({ cyyBalance, xCyyBalance }: StakeCardProps) {
     const [approvalState, approve] = useApproveCallback(     
         (chainId === 137)
         ? new TokenAmount(
-            new Token(137, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'QUEST', ''),
+            new Token(137, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'QST3', ''),
             parsedInput.value.toString()
         )  
         :
         (chainId === 4)
         ? new TokenAmount(
-            new Token(4, '0x5e88777e5956CBf076500E75b09aCfE8f09BC9ca', 18, 'QUEST', ''),
+            new Token(4, '0x5e88777e5956CBf076500E75b09aCfE8f09BC9ca', 18, 'QST3', ''),
             parsedInput.value.toString()
         )
         :
         (chainId === 97)
         ? new TokenAmount(
-            new Token(97, '0x1Da4EbB979A6925159eAc5Ad8B675B9ED75b499F', 18, 'QUEST', ''),
+            new Token(97, '0x1d3e64aa989a61c4d30c259dce391b784b55973b', 18, 'QST3', ''),
             parsedInput.value.toString()
         )
         :
         (chainId === 56)
         ? new TokenAmount(
-            new Token(56, '0xC456D84D202FcB97E29Fc2dce20aC613434C8065', 18, 'QUEST', ''),   
+            new Token(56, '0xC456D84D202FcB97E29Fc2dce20aC613434C8065', 18, 'QST3', ''),   
             parsedInput.value.toString()
         )
         :
          new TokenAmount(
-            new Token(1, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'QUEST', ''),     //address need to change
+            new Token(1, '0xbea6aff7067d1db51145039c6484a9b670c705ad', 18, 'QST3', ''),     //address need to change
             parsedInput.value.toString()
         ),
         (chainId === 137) ? BAR_ADDRESS[137] :(chainId === 4) ? BAR_ADDRESS[4] :(chainId === 97) ? BAR_ADDRESS[97] :(chainId === 56) ? BAR_ADDRESS[56] : BAR_ADDRESS[1]  
@@ -187,7 +187,7 @@ export default function StakeCard({ cyyBalance, xCyyBalance }: StakeCardProps) {
                         }}
                     >
                         <div className={activeTab === 0 ? activeTabStyle : inactiveTabStyle}>
-                            <p>{i18n._(t`Stake QUEST`)}</p>
+                            <p>{i18n._(t`Stake QST3`)}</p>
                         </div>
                     </div>
                     <div
@@ -205,11 +205,11 @@ export default function StakeCard({ cyyBalance, xCyyBalance }: StakeCardProps) {
 
                 <div className="flex justify-between items-center w-full mt-6">
                 <p className="text-large md:text-h5 font-bold text-high-emphesis">
-                        {activeTab === 0 ? i18n._(t`Stake QUEST`) : i18n._(t`Unstake`)}
+                        {activeTab === 0 ? i18n._(t`Stake QST3`) : i18n._(t`Unstake`)}
                     </p>
                     <div className="border-gradient-r-pink-red-light-brown-dark-pink-red border-transparent border-solid border rounded-3xl px-4 md:px-3.5 py-1.5 md:py-0.5 text-high-emphesis text-xs font-medium md:text-caption md:font-normal">
-                        {/* {`1 xQUEST = ${xCyyPerCyy.toFixed(2)} QUEST`} */}
-                        {`1 xQUEST = 1 QUEST`}
+                        {/* {`1 xQST3 = ${xCyyPerCyy.toFixed(2)} QST3`} */}
+                        {`1 xQST3 = 1 QST3`}
 
                     </div>
                 </div>
@@ -236,7 +236,7 @@ export default function StakeCard({ cyyBalance, xCyyBalance }: StakeCardProps) {
                                     input ? 'text-high-emphesis' : 'text-secondary'
                                 }`}
                             >
-                                {`${input ? input : '0'} ${activeTab === 0 ? '' : 'x'}QUEST`}
+                                {`${input ? input : '0'} ${activeTab === 0 ? '' : 'x'}QST3`}
                             </p>
                         </div>
                         <div className="flex items-center text-secondary text-caption2 md:text-caption">

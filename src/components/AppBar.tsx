@@ -51,7 +51,7 @@ function AppBar(): JSX.Element {
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
                                         <NavLink to={'/'}>
-                                        <img src={Logo} alt="Quest3Coin" className="h-8 w-auto" />
+                                        <img src={Logo} alt="Quest3" className="h-8 w-auto" />
                                         </NavLink>
                                     </div>
                                     <div className="hidden sm:block sm:ml-4">
@@ -69,7 +69,7 @@ function AppBar(): JSX.Element {
                                             </NavLink>
                                             
                                              {chainId &&
-                                                [ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) && (
+                                                [ChainId.BSC_TESTNET].includes(chainId) && (
                                             <NavLink
                                                 id={`pool-nav-link`}
                                                 to={'/pool'}
@@ -126,12 +126,12 @@ function AppBar(): JSX.Element {
                                     <div className="flex items-center justify-between sm:justify-end space-x-2 w-full">                          
                                             
                                         {chainId &&
-                                            [ ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) &&
+                                            [ChainId.BSC_TESTNET].includes(chainId) &&
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
                                                     <QuestionHelper
-                                                        text={i18n._(t`Add xQuest3Coin to your Metamask wallet`)}
+                                                        text={i18n._(t`Add xQuest3 to your Metamask wallet`)}
                                                     >
                                                         {/* <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-900 hover:bg-dark-800 cursor-pointer"
@@ -157,11 +157,7 @@ function AppBar(): JSX.Element {
                                                                     //     address =
                                                                     //         '0xAF53b5f1AE51ae5Fe554912A7a2649Ebb90074E7'    
                                                                     //     break
-                                                                    case ChainId.RINKEBY:
-                                                                        address =
-                                                                            '0x00EAbc1D044764cc9e959954698426326247b1c4'
-                                                                        break
-
+                          
                                                                     case ChainId.BSC_TESTNET:
                                                                         address =
                                                                             '0x82C6727ee76f5A03bAA1c4372A848EB5b7C5E8A5'
@@ -171,7 +167,7 @@ function AppBar(): JSX.Element {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'xQuest3Coin',
+                                                                        symbol: 'xQuest3',
                                                                         decimals: 18,
                                                                         image:
                                                                             'https://samkoin.com/public/images/other/sam1.png'
@@ -191,7 +187,7 @@ function AppBar(): JSX.Element {
                                                                         .then(success => {
                                                                             if (success) {
                                                                                 console.log(
-                                                                                    'Successfully added xQuest3Coin to MetaMask'
+                                                                                    'Successfully added xQuest3 to MetaMask'
                                                                                 )
                                                                             } else {
                                                                                 throw new Error('Something went wrong.')
@@ -217,12 +213,12 @@ function AppBar(): JSX.Element {
                                                 </>
                                             )}
 
-                                        {/* {chainId &&
-                                            [ ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) &&
+                                         {chainId &&
+                                            [ ChainId.BSC_TESTNET].includes(chainId) &&
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
-                                                    <QuestionHelper text={i18n._(t`Add Quest3Coin to your Metamask wallet`)}>
+                                                    <QuestionHelper text={i18n._(t`Add Quest3 to your Metamask wallet`)}>
                                                         <div
                                                             className="rounded-md bg-dark-1000 hover:bg-dark-800 cursor-pointer"
                                                             onClick={() => {
@@ -232,24 +228,19 @@ function AppBar(): JSX.Element {
                                                                     //     address =
                                                                     //         '0xC456D84D202FcB97E29Fc2dce20aC613434C8065'   //address need to change
                                                                     //     break
-                                                                    case ChainId.RINKEBY:
-                                                                        address =
-                                                                            '0x5e88777e5956CBf076500E75b09aCfE8f09BC9ca'
-                                                                        break
-
                                                                     case ChainId.BSC_TESTNET:
                                                                         address =
-                                                                            '0x1Da4EbB979A6925159eAc5Ad8B675B9ED75b499F'
+                                                                            '0x1d3e64aa989a61c4d30c259dce391b784b55973b'
                                                                         break
                                                                 }
                                                                 const params: any = {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'Quest3Coin',
+                                                                        symbol: 'Quest3',
                                                                         decimals: 18,
                                                                         image:
-                                                                        'https://quest3.com/images/tokens/samk-square.png'
+                                                                        'https://questswap3.netlify.app/images/tokens/samk-square.png'
                                                                     }
                                                                 }
 
@@ -266,7 +257,7 @@ function AppBar(): JSX.Element {
                                                                         .then(success => {
                                                                             if (success) {
                                                                                 console.log(
-                                                                                    'Successfully added Quest3Coin to MetaMask'
+                                                                                    'Successfully added Quest3 to MetaMask'
                                                                                 )
                                                                             } else {
                                                                                 throw new Error('Something went wrong.')
@@ -290,7 +281,7 @@ function AppBar(): JSX.Element {
                                                         </div>
                                                     </QuestionHelper>
                                                 </>
-                                            )} */}
+                                            )} 
                                         {/* {chainId && chainId === ChainId.MATIC && (
                                             <div className="hidden sm:inline-block">
                                                 <a
@@ -309,7 +300,7 @@ function AppBar(): JSX.Element {
                                         {library && account && (
                                             <div className="hidden sm:inline-block">
                                                  {chainId &&
-                                            [ ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) &&
+                                            [ ChainId.BSC_TESTNET].includes(chainId) &&
                                                 <Web3Network />
                                                 }
                                             </div>
@@ -317,7 +308,7 @@ function AppBar(): JSX.Element {
                                         {library && account &&(
                                            
                                         <div className="w-auto flex items-center rounded bg-dark-900 hover:bg-dark-1000 p-0.5 whitespace-nowrap text-sm font-bold cursor-pointer select-none pointer-events-auto">
-                                         {chainId && chainId !== ChainId.RINKEBY && chainId !== ChainId.BSC_TESTNET && ( 
+                                         {chainId && chainId !== ChainId.BSC_TESTNET && ( 
                                             <Web3Networks />
                                           )}
                                              </div>
@@ -328,7 +319,7 @@ function AppBar(): JSX.Element {
                                             {account && chainId && userEthBalance && (
                                                 <>
                                                   {chainId && 
-                                                     [ ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) &&
+                                                     [ChainId.BSC_TESTNET].includes(chainId) &&
                                                     <div className="py-2 px-2 text-primary1 text-bold">
                                                   
                                                         {userEthBalance?.toSignificant(4)}{' '}
@@ -380,7 +371,7 @@ function AppBar(): JSX.Element {
                                     {i18n._(t`Swap`)}
                                 </NavLink>
                           
-                            {chainId && [ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) && (
+                            {chainId && [ChainId.BSC_TESTNET].includes(chainId) && (
                                 <NavLink
                                     id={`pool-nav-link`}
                                     to={'/pool'}
@@ -401,7 +392,7 @@ function AppBar(): JSX.Element {
                                     </NavLink>
                                 )} */}
                                  {/* {chainId &&
-                                    [ ChainId.RINKEBY, ChainId.BSC_TESTNET].includes(chainId) && (
+                                    [  ChainId.BSC_TESTNET].includes(chainId) && (
                                         <NavLink id={`stake-nav-link`} to={'/Cybar'}>
                                             {i18n._(t`CyBar`)}
                                     </NavLink>
