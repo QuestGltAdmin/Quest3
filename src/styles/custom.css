@@ -874,5 +874,17 @@ img{
 @media (min-width: 1200px){
     .container {
         max-width: 1170px;
-    }}
+    }
+    .eigth-section .block-border1 {
+        border: 2px solid #d5b25c;
+        padding: 16px;
+        border-radius: 12px;
+        background-color: #090909;
+        position: relative;
+        border-radius: 12px;
+        height: 250px;
+        margin: 10px;
+    }
+}
+
 }
