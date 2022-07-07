@@ -89,7 +89,7 @@ function App(): JSX.Element {
     return (
         <Suspense fallback={null}>
             <div className="flex flex-col items-start h-screen overflow-x-hidden">
-            {pathname === "/home" ?
+            {pathname.toLowerCase() === "/home" ?
                  <HomeHeader/> : 
                     <AppBar />}
                 {pathname === "/" ?
