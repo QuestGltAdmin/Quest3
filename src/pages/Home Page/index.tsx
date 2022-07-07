@@ -366,7 +366,7 @@ export default function HomePage() {
                 <div className="custom-w-60">
                 <p className=" for-main text-white text-left  before position-relative">Blogs</p>
                 <h1 className="text-left">Latest Blogs</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nibh nec diam euismod luctus. Aenean blandit ante lobortis neque elementum, sit amet<br /> euismod metus varius.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nibh nec diam<br /> euismod luctus. Aenean blandit ante lobortis neque elementum, sit amet<br /> euismod metus varius.
                 </p>
                 </div>
               </div> 
