@@ -17,7 +17,7 @@ function HomeHeader(): JSX.Element {
              <div className="col-md-12">
                <nav className="navbar navbar-expand-lg navbar-dark">
                  <div className="navbar-brand justify-content-center"> 
-                   <a href="#"><img className="image-logo-header" src={Logo} width="100%" /></a>
+                   <a href="/home"><img className="image-logo-header" src={Logo} width="100%" /></a>
                  </div>
                  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                    <span className="navbar-toggler-icon"><i className="fa fa-bars" /></span>
@@ -25,7 +25,7 @@ function HomeHeader(): JSX.Element {
                  <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                    <ul className="navbar-nav mx-auto">
                      <li className="nav-item">
-                       <a className="nav-link" href="#">Home</a>
+                       <a className="nav-link" href="/home">Home</a>
                      </li>
                      <li className="nav-item">
                        <a className="nav-link" href="#">OTC desk</a>
@@ -34,10 +34,10 @@ function HomeHeader(): JSX.Element {
                        <a className="nav-link" href="#">Commodities</a>
                      </li>
                      <li className="nav-item">
-                       <a className="nav-link" href="#">Pharmaceuticals</a>
+                       <a className="nav-link" href="http://3.128.18.127:3000" >Trading</a>
                      </li>
                      <li className="nav-item">
-                       <a className="nav-link" href="#">Green Swaps</a>
+                       <a className="nav-link" href="/">Swaps</a>
                      </li>
                      <li className="nav-item">
                        <a className="nav-link" href="#">Incubator</a>

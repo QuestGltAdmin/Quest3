@@ -50,7 +50,7 @@ function AppBar(): JSX.Element {
                             <div className="flex items-center justify-between h-16">
                                 <div className="flex items-center">
                                     <div className="flex-shrink-0">
-                                        <NavLink to={'/'}>
+                                        <NavLink to={'/home'}>
                                         <img src={Logo} alt="Quest3" className="h-8 w-auto" />
                                         </NavLink>
                                     </div>

@@ -871,6 +871,8 @@ img{
     position: relative;
     z-index: 10;
 }
+}
+
 @media (min-width: 1200px){
     .container {
         max-width: 1170px;
@@ -885,6 +887,4 @@ img{
         height: 250px;
         margin: 10px;
     }
-}
-
 }
