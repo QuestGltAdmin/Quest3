@@ -24,12 +24,11 @@ import youtube from '../../assets/images/cy-homepage-img/Youtube.png'
 import { settings } from 'cluster'
 // import Slider from '@types/react-slick'
 import Slider from 'react-slick'
-
-
-
+// import ReactWOW from 'react-wow'
 
 export default function HomePage() {
     const { i18n } = useLingui()
+
 
     let settings = {
         dots: false,
@@ -58,6 +57,8 @@ export default function HomePage() {
 
     return (
         <>
+     {/* <ReactWOW animation='fadeIn'><img src={blockchain} /></ReactWOW> */}
+
             <section className="main-banner banner-new-bg">
           <div className="container">
             <div className="row">
@@ -77,7 +78,7 @@ export default function HomePage() {
         <section className="second-section">
           <div className="container">
             <div className="row align-items-center">
-              <div className="col-md-6 col-lg-4  m-auto">
+              <div className="col-md-6  col-lg-4  m-auto">
                 <div className="block">
                   <div className="block1">
                     <div className="icon text-center mb-3 mx-auto rounded-circle">
@@ -92,7 +93,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4">
-                <div className="block">
+                <div  className="block ">
                   <div className="block1">
                     <div className="icon text-center mb-3 mx-auto rounded-circle">
                       <img src={realtime} alt="" />
@@ -144,7 +145,7 @@ export default function HomePage() {
                       Quest3 Launchpad
                     </h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a euismod mauris, vel blandit justo.</p>
-                    <br />
+                   
                     <a className="learn-more">Learn More <i className="fa fa-arrow-right" aria-hidden="true" /></a>
                   </div>
                 </div>
@@ -156,7 +157,7 @@ export default function HomePage() {
                       Green Swap
                     </h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a euismod mauris, vel blandit justo.</p>
-                    <br />
+                    
                     <a className="learn-more">Learn More <i className="fa fa-arrow-right" aria-hidden="true" /></a>
                   </div>
                 </div>
@@ -168,7 +169,7 @@ export default function HomePage() {
                       NFT
                     </h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a euismod mauris, vel blandit justo.</p>
-                    <br />
+                   
                     <a className="learn-more">Learn More <i className="fa fa-arrow-right" aria-hidden="true" /></a>
                   </div>
                 </div>
@@ -362,10 +363,12 @@ export default function HomePage() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-12">
+                <div className="custom-w-60">
                 <p className=" for-main text-white text-left  before position-relative">Blogs</p>
                 <h1 className="text-left">Latest Blogs</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nibh nec diam<br /> euismod luctus. Aenean blandit ante lobortis neque elementum, sit amet<br /> euismod metus varius.
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nibh nec diam euismod luctus. Aenean blandit ante lobortis neque elementum, sit amet<br /> euismod metus varius.
                 </p>
+                </div>
               </div> 
               <div className="col-md-6 col-lg-3 col-sm-6 m-auto">
                 <div className="block-border1">
