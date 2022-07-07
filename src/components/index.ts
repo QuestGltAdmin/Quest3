@@ -1,5 +1,6 @@
 export { default as Alert } from './Alert'
 export { default as AppBar } from './AppBar'
+export { default as HomeHeader } from './HomeHeader'
 export { default as Badge } from './Badge'
 export { default as Button, BackButton } from './Button'
 export { default as Card } from './Card'
