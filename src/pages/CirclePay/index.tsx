@@ -138,13 +138,13 @@ const { i18n } = useLingui()
     return (
         <>
          <section id="payment_pg">
-          <div className="container">
-            <div className="row">
+          <div className="container py-4">
+            <div className="row justify-content-center">
               <div className="col-lg-10">
                 <div className="payment_main w-100">
                   <h2>Pay With Card</h2>
                   <div className="row">
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-md-6">
                       <p>Card Details</p>
                       <label htmlFor="">Amount</label>
                       <input type="text" name="amount" value="" id="" disabled />
@@ -183,7 +183,7 @@ const { i18n } = useLingui()
                       <input type="text" name="channel" onChange={formdata} value={inputdata.channel} id="" placeholder="Channel" />
                       */}
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 col-md-6">
                       <p>Billing Details</p>
                       <label htmlFor="">Cardholder Name</label>
                       <input type="text" name="name"  value={billingDetails.name} id="" placeholder="Full Name" />
