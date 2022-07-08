@@ -25,31 +25,28 @@ function HomeHeader(): JSX.Element {
                  <div className="collapse navbar-collapse" id="navbarNav">
                    <ul className="navbar-nav mx-auto">
                      <li className="nav-item">
-                       <a className="nav-link" href="/home">Home</a>
-                     </li>
-                     <li className="nav-item">
-                       <a className="nav-link" href="#">OTC desk</a>
-                     </li>
-                     <li className="nav-item">
-                       <a className="nav-link" href="#">Commodities</a>
+                       <a className="nav-link" href="/">Swap</a>
                      </li>
                      <li className="nav-item">
                        <a className="nav-link" href="http://3.143.163.192:3000" >Trading</a>
                      </li>
                      <li className="nav-item">
-                       <a className="nav-link" href="/">Swap</a>
+                       <a className="nav-link" href="">OTC desk</a>
                      </li>
                      <li className="nav-item">
-                       <a className="nav-link" href="#">Incubator</a>
+                       <a className="nav-link" href="">Commodities</a>
                      </li>
                      <li className="nav-item">
-                       <a className="nav-link" href="#">NFT</a>
+                       <a className="nav-link" href="">Incubator</a>
                      </li>
                      <li className="nav-item">
-                       <a className="nav-link" href="#">Sovereign Coins</a>
+                       <a className="nav-link" href="">NFT</a>
+                     </li>
+                     <li className="nav-item">
+                       <a className="nav-link" href="">Sovereign Coins</a>
                      </li>
                    </ul>
-                   <div className="navbtn align-items-center d-lg-block" style={{marginRight: '5px'}}>
+                   {/* <div className="navbtn align-items-center d-lg-block" style={{marginRight: '5px'}}>
                      <div className="d-flex align-items-center">
                        <a className="d-inline-block green text-white" >Login</a>
                      </div>
@@ -58,7 +55,7 @@ function HomeHeader(): JSX.Element {
                      <div className="d-flex align-items-center">
                        <a className="d-inline-block green text-white">Buy Now</a>
                      </div>
-                   </div>
+                   </div> */}
                  </div>
                </nav>
              </div>
