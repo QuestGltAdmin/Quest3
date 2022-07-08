@@ -1,7 +1,6 @@
 
 import { useEffect, useState } from "react";
 
-import AOS from "aos";
 import { ChainId } from 'quest-quest3-sdk'
 import React from 'react'
 import { Redirect, Route, RouteComponentProps, useLocation, Switch } from 'react-router-dom'
@@ -43,10 +42,6 @@ import HomePage from 'pages/Home Page'
 import CirclePay from 'pages/CirclePay'
 
 function Routes(): JSX.Element {
-    useEffect(() => {
-        AOS.init();
-      }, [])
-
     const { chainId } = useActiveWeb3React()
     return (
         <Switch>

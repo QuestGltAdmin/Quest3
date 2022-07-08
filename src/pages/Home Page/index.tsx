@@ -20,12 +20,9 @@ import questlogo from '../../assets/images/cy-homepage-img/Quest3_logo.png'
 import instagram from '../../assets/images/cy-homepage-img/Instagram.png'
 import twitter from '../../assets/images/cy-homepage-img/Twitter.png'
 import youtube from '../../assets/images/cy-homepage-img/Youtube.png'
-// import ReactWOW from 'react-wow'
 
 import { settings } from 'cluster'
-// import Slider from '@types/react-slick'
 import Slider from 'react-slick'
-// import ReactWOW from 'react-wow'
 
 export default function HomePage() {
     const { i18n } = useLingui()
@@ -65,8 +62,6 @@ export default function HomePage() {
 
     return (
         <>
-     {/* <ReactWOW animation='fadeIn'><img src={blockchain} /></ReactWOW> */}
-
             <section className="main-banner banner-new-bg">
           <div className="container">
             <div className="row">
@@ -83,14 +78,11 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-        {/* <ReactWOW animation='fadeIn'><img src='https://unsplash.it/900/900/?random' /></ReactWOW> */}
         <section className="second-section">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6  col-lg-4  m-auto">
-              {/* <ReactWOW animation='fadeIn'> */}
-              {/* <div className="wow fadeInUp" style={{color:"#fff",visibility:"initial!important"}}>hello</div> */}
-                <div  className="block  ">
+             <div  className="block  ">
                   <div className="block1 ">
                     <div className="icon text-center mb-3 mx-auto rounded-circle">
                       <img src={blockchain} alt="" />
@@ -103,7 +95,6 @@ export default function HomePage() {
                     <a className="learn-more">Learn More <i className="fa fa-arrow-right" aria-hidden="true" /></a>
                   </div>
                 </div>
-                {/* </ReactWOW> */}
               </div>
               <div className="col-md-6 col-lg-4">
                 <div  className="block ">
