@@ -73,7 +73,7 @@ p {
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     line-height: 150%;
-    font-size: 64px;
+    font-size: 44px;
     max-width:700px;
 
 }
@@ -1072,3 +1072,56 @@ img{
   text-fill-color: transparent;
   border: 1px solid #a77327;
   }
+
+  .custom section.newsletter .subscribe-text h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.custom section.newsletter .subscribe-text h2 span {
+    background: linear-gradient(90deg,#a77327,#efd67b 49.79%,#a77327);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.custom section.newsletter .subscribe-form input[type=email] {
+    background: hsla(0,0%,100%,.1);
+    border: 0;
+    padding: 1.3rem 11rem 1.3rem 1rem;
+    border-radius: 12px;
+    width: 85%;
+}
+
+.custom section.newsletter .subscribe-form button {
+    left: 70%;
+    top: 20%;
+    background: linear-gradient(90deg,#a77327,#efd67b 49.79%,#a77327);
+    border-radius: 6px;
+    border: 0;
+    padding: 14px 12px;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: 27%;
+}
+
+.newsletter .for-link-sec {
+    padding-right: 15px;
+}
+
+.newsletter .for-link-sec a {
+    color: #c0baba;
+    transition: all .4s ease;
+    height: auto;
+    width: auto;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 6px;
+    margin: 6px;
+}
+
+.newsletter .for-link-sec a img {
+    height: 32px !important;
+    width: 32px;
+    object-fit: contain;
+}
