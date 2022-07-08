@@ -8,7 +8,7 @@ import card from '../../assets/images/cy-swap-img/card-img.png'
 import coin from '../../assets/images/cy-swap-img/coin.png'
 import btn from '../../assets/images/cy-swap-img/btn.png'
 import btc from '../../assets/images/cy-swap-img/btc.png'
-import eth from '../../assets/images/cy-swap-img/eth.png'
+import usdc from 'https://bscscan.com/token/images/centre-usdc_28.png'
 import usdt from '../../assets/images/cy-swap-img/tether-usdt.png'
 import bsc from '../../assets/images/cy-swap-img/bsc.png'
 import circle from '../../assets/images/cy-swap-img/circle-rotate.png'
@@ -117,23 +117,23 @@ export default function Home() {
 
                     </div>
                     <div className='row'>
-                        <div className='col-md-6'>
+                    <div className='col-md-6'>
                             <div className="conversion-chang">
                                 <div className="first-box-new">
-                                    <img src="https://bscscan.com/token/images/binance_32.png" />
+                                    <img src="https://bscscan.com/token/images/centre-usdc_28.png" />
                                     <div>
-                                        <h5>Binance</h5>
-                                        <p>BNB</p>
+                                        <div>
+                                            <h5>USDC</h5>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="first-box-new">
                                     <img src={btn} />
                                 </div>
                                 <div className="first-box-new">
-                                    <img src={eth} />
+                                <img src={btc} />
                                     <div>
-                                        <h5>Ethereum</h5>
-                                        <p>ETH</p>
+                                        <h5>BTC</h5>
                                     </div>
                                 </div>
                             </div>
@@ -143,8 +143,26 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src="https://bscscan.com/token/images/binance_32.png" />
                                     <div>
-                                        <h5>Binance</h5>
-                                        <p>BNB</p>
+                                        <h5>BNB</h5>
+                                    </div>
+                                </div>
+                                <div className="first-box-new">
+                                    <img src={btn} />
+                                </div>
+                                <div className="first-box-new">
+                                    <img src="https://bscscan.com/token/images/centre-usdc_28.png" />
+                                    <div>
+                                        <h5>USDC</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='col-md-6'>
+                            <div className="conversion-chang">
+                                <div className="first-box-new">
+                                    <img src="https://bscscan.com/token/images/binance_32.png" />
+                                    <div>
+                                        <h5>BNB</h5>
                                     </div>
                                 </div>
                                 <div className="first-box-new">
@@ -153,8 +171,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src={btc} />
                                     <div>
-                                        <h5>Bitcoin</h5>
-                                        <p>BTC</p>
+                                        <h5>BTC</h5>
                                     </div>
                                 </div>
                             </div>
@@ -165,8 +182,7 @@ export default function Home() {
                                     <div className="first-box-new">
                                         <img src="https://bscscan.com/token/images/binance_32.png" />
                                         <div>
-                                            <h5>Binance</h5>
-                                            <p>BNB</p>
+                                            <h5>BNB</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -176,8 +192,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src="https://bscscan.com/token/images/busd_32.png" />
                                     <div>
-                                        <h5>Binance USD</h5>
-                                        <p>BUSD</p>
+                                        <h5>BUSD</h5>
                                     </div>
                                 </div>
                             </div>
@@ -187,8 +202,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src="https://bscscan.com/token/images/binance_32.png" />
                                     <div>
-                                        <h5>Binance</h5>
-                                        <p>BNB</p>
+                                        <h5>BNB</h5>
                                     </div>
                                 </div>
                                 <div className="first-box-new">
@@ -198,8 +212,7 @@ export default function Home() {
                                     <div className="first-box-new">
                                         <img src={usdt} />
                                         <div>
-                                            <h5>Tether</h5>
-                                            <p>USDT</p>
+                                            <h5>USDT</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -210,8 +223,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src="https://bscscan.com/token/images/busd_32.png" />
                                     <div>
-                                        <h5>Binance USD</h5>
-                                        <p>BUSD</p>
+                                        <h5>BUSD</h5>
                                     </div>
                                 </div>
                                 <div className="first-box-new">
@@ -220,8 +232,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src={btc} />
                                     <div>
-                                        <h5>Bitcoin</h5>
-                                        <p>BTC</p>
+                                        <h5>BTC</h5>
                                     </div>
                                 </div>
                             </div>
@@ -231,8 +242,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src="https://bscscan.com/token/images/busd_32.png" />
                                     <div>
-                                        <h5>Binance USD</h5>
-                                        <p>BUSD</p>
+                                        <h5>BUSD</h5>
                                     </div>
                                 </div>
                                 <div className="first-box-new">
@@ -241,8 +251,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src={usdt} />
                                     <div>
-                                        <h5>Tether</h5>
-                                        <p>USDT</p>
+                                        <h5>USDT</h5>
                                     </div>
                                 </div>
                             </div>
@@ -252,18 +261,16 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src="https://bscscan.com/token/images/busd_32.png" />
                                     <div>
-                                        <h5>Binance USD</h5>
-                                        <p>BUSD</p>
+                                        <h5>BUSD</h5>
                                     </div>
                                 </div>
                                 <div className="first-box-new">
                                     <img src={btn} />
                                 </div>
                                 <div className="first-box-new">
-                                    <img src={eth} />
+                                    <img src="https://bscscan.com/token/images/centre-usdc_28.png" />
                                     <div>
-                                        <h5>Ethereum</h5>
-                                        <p>ETH</p>
+                                        <h5>USDC</h5>
                                     </div>
                                 </div>
                             </div>
@@ -273,8 +280,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src={btc} />
                                     <div>
-                                        <h5>Bitcoin</h5>
-                                        <p>BTC</p>
+                                        <h5>BTC</h5>
                                     </div>
                                 </div>
                                 <div className="first-box-new">
@@ -283,8 +289,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src={usdt} />
                                     <div>
-                                        <h5>Tether</h5>
-                                        <p>USDT</p>
+                                        <h5>USDT</h5>
                                     </div>
                                 </div>
                             </div>
@@ -292,11 +297,10 @@ export default function Home() {
                         <div className='col-md-6'>
                             <div className="conversion-chang">
                                 <div className="first-box-new">
-                                    <img src={eth} />
+                                    <img src="https://bscscan.com/token/images/centre-usdc_28.png" />
                                     <div>
                                         <div>
-                                            <h5>Ethereum</h5>
-                                            <p>ETH</p>
+                                            <h5>USDC</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -306,31 +310,7 @@ export default function Home() {
                                 <div className="first-box-new">
                                     <img src={usdt} />
                                     <div>
-                                        <h5>Tether</h5>
-                                        <p>USDT</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className='col-md-6'>
-                            <div className="conversion-chang">
-                                <div className="first-box-new">
-                                    <img src={eth} />
-                                    <div>
-                                        <div>
-                                            <h5>Ethereum</h5>
-                                            <p>ETH</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="first-box-new">
-                                    <img src={btn} />
-                                </div>
-                                <div className="first-box-new">
-                                <img src={btc} />
-                                    <div>
-                                        <h5>Bitcoin</h5>
-                                        <p>BTC</p>
+                                        <h5>USDT</h5>
                                     </div>
                                 </div>
                             </div>
