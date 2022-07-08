@@ -75,7 +75,7 @@ export default function Home() {
                         <div className='col-lg-5 offset-lg-1 col-md-6'>
                             <div>
                                 <h2 className="common-heading">Quest3 Protocol</h2>
-                                <p className="commonpera">The Quest3 Swap Protocol is a public entity owned and governed by all-inclusive Quest3 holders. Designed with simplicity, speed, affordability and security in mind, Quest3 SWAP allows users to diversify market offerings & make increasing gains. </p>
+                                <p className="commonpera">The Quest3 Swap Protocol is a public entity owned and governed by all-inclusive Quest3 holders. Designed with simplicity, speed, affordability and security in mind, Quest3 SWAP allows users to diversify market offerings & make increasing gains.  Swapping mechanism based on Quantum entangled process with Zero Knowledge similar to the video below instead of Earth & Mars x is BTC and Q is Quest global and Y is the coins we swapping</p>
                             </div>
                         </div>
                         <div className='col-lg-5 text-center col-md-6'>

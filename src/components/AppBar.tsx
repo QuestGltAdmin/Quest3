@@ -1,7 +1,7 @@
 import { ChainId, Currency } from 'quest-quest3-sdk'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import Logo from '../assets/images/Quest3_green.png'
+import Logo from '../assets/images/Quest3_swap.png'
 import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
 import { useETHBalances } from '../state/wallet/hooks'
 import { ReactComponent as Burger } from '../assets/images/burger.svg'
