@@ -910,10 +910,165 @@ img{
     margin:0 auto;
 }
 }
-@keyframes example {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
-    50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+
+/*circlepay*/
+#payment_pg .payment_main {
+    border: 1px solid #a77327;
+    padding: 10px;
+    border-radius: 12px;
+  }
+  
+  #payment_pg .payment_main h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  
+  #payment_pg .payment_main p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+  }
+  #payment_pg .payment_main label{
+    font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-top: 10px;
+  }
+  #payment_pg .payment_main input{
+    display: block;
+    width: 100%;
+    align-items: center;
+  padding: 8px 12px;
+  gap: 16px;
+  background: #090909;
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  border-color: #a77327;
+  color: #FFFFFF;
+  }
+  #payment_pg .payment_main #country{
+    display: block;
+    width: 100%;
+    align-items: center;
+  padding: 8px 14px;
+  gap: 16px;
+  background: #090909;
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  border-color: #a77327;
+  color: #FFFFFF;
+  }
+  #payment_pg .payment_main .buy_cyy{
+   padding: 16px 27px;
+  gap: 10px;
+  background: linear-gradient(90deg, #A77327 0%, #EFD67B 49.79%, #A77327 100%);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #000;
+  margin: 5px;
+  }
+  #payment_pg .payment_main .btn_row1{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  #payment_pg .payment_main .btn_row2{
+    display: flex;
+    justify-content: center;
+  }
+  #payment_pg .payment_main .saved_card{
+   padding: 15px 26px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border: 1px solid #a77327;
+    border-radius: 10px;
+  text-align: center;
+  font-feature-settings: 'salt' on, 'liga' off;
+  background: linear-gradient(90deg, #A77327 0%, #EFD67B 49.79%, #A77327 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  
+  }
+  
+  #payment_pg .payment_main .save_head{
+    text-align: center;
+  }
+  #payment_pg .payment_main .card_11{
+  padding: 20px;
+  gap: 300px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-top: 10px;
+  }
+  #payment_pg .payment_main .card_11 .card_11main{
+  display: flex;
+  
+  }
+  #payment_pg .payment_main .card_11 .card_11main .card_11main1{
+    margin-left: 10px;
+  }
+  #payment_pg .payment_main .card_11 .card_11main h5{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0px;
+    color: #FFFFFF;
+  }
+  #payment_pg .payment_main .card_11 .card_11main p{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #payment_pg .payment_main .card_11 .card_main22{
+    margin: 0 0 0 auto;
+    text-align: right;
+    display: flex;
+    align-items: center;
+  }
+  #payment_pg .payment_main .pay_now1{
+    margin-top: 20px;
+    padding: 16px 40px;
+  gap: 10px;
+  background: linear-gradient(90deg, #A77327 0%, #EFD67B 49.79%, #A77327 100%);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #FFFFFF;
+  }
+  #payment_pg .cardmain{
+    margin: 0 auto;
+  }
+  #payment_pg .payment_main .pay_cancel{
+    margin-top: 20px;
+    padding: 16px 40px;
+  border-radius: 6px;
+  margin-left: 20px;
+    font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-feature-settings: 'salt' on, 'liga' off;
+  background: linear-gradient(90deg, #A77327 0%, #EFD67B 49.79%, #A77327 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  border: 1px solid #a77327;
   }
