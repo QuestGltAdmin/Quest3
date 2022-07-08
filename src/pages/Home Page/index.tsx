@@ -194,7 +194,7 @@ export default function HomePage() {
                         <div className="col-md-6 col-lg-4 m-auto">
                             <div className="block-border">
                                 <div className="block2">
-                                    <h2 className=" py-1">Quest Wallet</h2>
+                                    <h2 className=" py-1">Quest3 Wallet</h2>
                                     <p>
                                         Easy, safe and secured transfers with a unique Trading Portal from Quest3. We
                                         have a strong security system and ensure your account will remain secure
