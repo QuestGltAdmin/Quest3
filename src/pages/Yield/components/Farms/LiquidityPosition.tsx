@@ -138,7 +138,7 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
 
                     {expand && (
                         <MasterChefV1Details
-                            pid={props.index}
+                            pid={props.index + 1}
                             pairAddress={props.farm.liquidityToken.address}
                             pairSymbol={props.farm.tokens[0].symbol}
                             token0Address={props.farm.tokens[0].address}
