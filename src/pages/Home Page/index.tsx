@@ -20,6 +20,7 @@ import questlogo from '../../assets/images/cy-homepage-img/Quest3_logo.png'
 import instagram from '../../assets/images/cy-homepage-img/Instagram.png'
 import twitter from '../../assets/images/cy-homepage-img/Twitter.png'
 import youtube from '../../assets/images/cy-homepage-img/Youtube.png'
+// import ReactWOW from 'react-wow'
 
 import { settings } from 'cluster'
 // import Slider from '@types/react-slick'
@@ -52,7 +53,14 @@ export default function HomePage() {
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
-        }]
+        },
+        {
+          breakpoint: 500,
+          settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+          }
+      }]
       };
 
     return (
@@ -64,9 +72,9 @@ export default function HomePage() {
             <div className="row">
               <div className="col-md-12 m-auto">
                 <div className="banner-content">
-                  <h3>Lorem ipsum dolor sit <br />amet, consectetur </h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est ipsum, <br />imperdiet vel purus at, vestibulum semper diam.</p>
+                  <h3>Lorem ipsum dolor sit amet, consectetur </h3>
+                  <p >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed est ipsum, imperdiet vel purus at, vestibulum semper diam.</p>
                 </div>
               </div>
               {/* <div class="col-md-6 m-auto">
@@ -75,22 +83,27 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        {/* <ReactWOW animation='fadeIn'><img src='https://unsplash.it/900/900/?random' /></ReactWOW> */}
         <section className="second-section">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-6  col-lg-4  m-auto">
-                <div className="block">
-                  <div className="block1">
+              {/* <ReactWOW animation='fadeIn'> */}
+              {/* <div className="wow fadeInUp" style={{color:"#fff",visibility:"initial!important"}}>hello</div> */}
+                <div  className="block  ">
+                  <div className="block1 ">
                     <div className="icon text-center mb-3 mx-auto rounded-circle">
                       <img src={blockchain} alt="" />
                     </div>
-                    <h2 className="text-center py-1">
+                    
+                    <h2 className="text-center py-1 ">
                       Blockchain Based
                     </h2>
                     <p className="text-center">Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform</p>
                     <a className="learn-more">Learn More <i className="fa fa-arrow-right" aria-hidden="true" /></a>
                   </div>
                 </div>
+                {/* </ReactWOW> */}
               </div>
               <div className="col-md-6 col-lg-4">
                 <div  className="block ">
@@ -128,7 +141,7 @@ export default function HomePage() {
           <div className="container">
             <div className="row align-items-center">
               <div className="col-md-12">
-                <h4 className="text-center mb-2">A crypto investment platform that&nbsp;invests in you</h4>
+                <h4 className="text-center mb-2 ">A crypto investment platform that&nbsp;invests in you</h4>
                 <p className="text-center pt-4">We invest more resources than any other platrom in making sure great support <br />from real people is a click away, whenever you need it.</p>
                 <div className="button-center"><a className="common-btn">Get Started</a></div>
               </div>
@@ -235,7 +248,7 @@ export default function HomePage() {
               <div className="col-md-12">
                 <p className=" for-main text-white text-left  before position-relative">Team</p>
                 <h1 className="text-left">Our Team Members</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nibh nec diam<br /> euismod luctus. Aenean blandit ante lobortis neque elementum, sit amet<br /> euismod metus varius.
+                <p className='for-max-wid'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nibh nec diam euismod luctus. Aenean blandit ante lobortis neque elementum, sit amet euismod metus varius.
                 </p>
               </div>
               <div className="col-md-6 col-lg-3 col-sm-6">
@@ -366,7 +379,7 @@ export default function HomePage() {
                 <div className="custom-w-60">
                 <p className=" for-main text-white text-left  before position-relative">Blogs</p>
                 <h1 className="text-left">Latest Blogs</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nibh nec diam<br /> euismod luctus. Aenean blandit ante lobortis neque elementum, sit amet<br /> euismod metus varius.
+                <p className='for-max-wid'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in nibh nec diam<br /> euismod luctus. Aenean blandit ante lobortis neque elementum, sit amet<br /> euismod metus varius.
                 </p>
                 </div>
               </div> 

@@ -42,7 +42,7 @@ export default function Home() {
                     <div className='row'>
                         <div className='col-md-3 col-sm-6 col-6'>
                             <div className='box-banner-new'>
-                                <h3>$6.66</h3>
+                                <h3 >$6.66</h3>
                                 <p>Quest3 Price</p>
                             </div>
                         </div>

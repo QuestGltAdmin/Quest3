@@ -36,6 +36,7 @@ p {
     padding: 6px 15px;
     font-size: 15px;
     color: #000 !important;
+    margin: 2px 0px 2px 0px;
 }
 .homepage-header .navbtn .green {
     background: linear-gradient(90deg, #a77327 0%, #efd67b 49.79%, #a77327 100%);
@@ -73,6 +74,7 @@ p {
     font-weight: 700;
     line-height: 150%;
     font-size: 64px;
+    max-width:700px;
 
 }
 .main-banner .banner-content p {
@@ -82,6 +84,8 @@ p {
     line-height: 30px;
     color: #FFFFFF;
     margin: 30px 0 30px;
+    max-width:600px;
+
 }
 .main-banner.banner-new-bg{
     position: relative;
@@ -292,6 +296,9 @@ font-size: 16px;
     color:rgba(255, 255, 255, 0.5);
     font-size: 16px;
     font-weight: 400;
+}
+.sixth-section .for-max-wid{
+    max-width: 550px;
 }
 .sixth-section  .for-main ::before {
     left: 0;
@@ -560,6 +567,9 @@ div.slick-track {
     font-size: 36px;
     font-weight: 700;
 }    
+.eigth-section .for-max-wid{
+    max-width: 550px;
+}
 .eigth-section p{
     color:rgba(255, 255, 255, 0.5);
     font-size: 16px;
@@ -871,20 +881,39 @@ img{
     position: relative;
     z-index: 10;
 }
+.eigth-section .block-border1 {
+    border: 2px solid #d5b25c;
+    padding: 16px;
+    border-radius: 12px;
+    background-color: #090909;
+    position: relative;
+    border-radius: 12px;
+    height: 250px;
+    margin: 10px;
+}
 }
 
 @media (min-width: 1200px){
     .container {
         max-width: 1170px;
     }
-    .eigth-section .block-border1 {
-        border: 2px solid #d5b25c;
-        padding: 16px;
-        border-radius: 12px;
-        background-color: #090909;
-        position: relative;
-        border-radius: 12px;
-        height: 250px;
-        margin: 10px;
-    }
+    
 }
+@media (min-width: 1440px){
+.container {
+    max-width: 1440px;
+}
+}
+@media (max-width: 500px){
+.slick-slider.new-slider-timeline.slick-initialized{
+    max-width:300px !important;
+    margin:0 auto;
+}
+}
+@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
