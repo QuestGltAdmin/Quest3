@@ -9,6 +9,7 @@ import { ReactComponent as X } from '../assets/images/x.svg'
 import Web3Network from './Web3Network'
 import Web3Status from './Web3Status'
 import Web3Faucet from './Web3Faucet'
+import CirclePayButton from './Circlepaybutton'
 import MoreMenu from './Menu'
 import { ExternalLink, NavLink } from './Link'
 import { Disclosure } from '@headlessui/react'
@@ -334,10 +335,10 @@ function AppBar(): JSX.Element {
                                         <MoreMenu/> 
                                         <LanguageSwitch />
 
-                                        {/* {chainId &&
-                                            [ChainId.RINKEBY].includes(
+                                        {chainId &&
+                                            [ChainId.BSC_TESTNET].includes(
                                                 chainId
-                                            ) && <Web3Faucet />} */}
+                                            ) && <CirclePayButton />}
 
                                              
                                     </div>
