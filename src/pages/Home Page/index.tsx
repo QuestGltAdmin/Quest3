@@ -257,7 +257,7 @@ export default function HomePage() {
             <section className="sixth-section">
                 <div className="container">
                     <div className="row align-items-center">
-                        <div className="col-md-5">
+                        <div className="col-md-7">
                             <p className=" for-main text-white text-left  before position-relative">Team</p>
                             <h1 className="text-left">Our Team Members</h1>
                             <p className="">
