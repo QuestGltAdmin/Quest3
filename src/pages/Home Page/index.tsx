@@ -459,75 +459,104 @@ export default function HomePage() {
         </div>
       </section> */}
 
-            <section className="newsletter pb-5 pt-13 w-100 " id="navigate-id-10">
-                <div className="container">
-                    <div className="row px-5 align-items-center m-1 py-4 desktop-view">
-                        <div className="col-lg-8">
-                            <div className="subscribe-wrapper subscribe2-wrapper ">
-                                <div className="subscribe-text ">
-                                    <h2 className="text-white">
-                                        Get In Touch With
-                                        <span> Quest3</span>
-                                    </h2>
-                                </div>
-                                <div className="subscribe-form pt-4">
-                                    <div className="position-relative w-100">
-                                        <input
-                                            className="form-control buynow_form-text"
-                                            placeholder="Enter Your Email Here"
-                                            type="email"
-                                            // value={newsLetter}
-                                            // onChange={(e) => setNewsLetter(e.target.value)}
-                                        />
-                                        <button className="common-btn">Contact Us</button>
-                                    </div>
-                                </div>
-                                <div className="for-link-sec pt-3">
-                                    <a href="https://twitter.com/Cycoin3" target="_blank" rel="noopener noreferrer">
-                                        <img style={{ margin: '4px' }} src={twitter1} />
-                                    </a>
-                                    <a
-                                        href="https://instagram.com/cycoinofficial?igshid=YmMyMTA2M2Y="
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img style={{ margin: '4px' }} src={instagram1} />
-                                    </a>
-                                    <a
-                                        href="https://discord.com/channels/978286839393845258/978286839901339720"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img style={{ margin: '4px' }} src={discord} />
-                                    </a>
-                                    <a
-                                        href="https://www.linkedin.com/company/cycoinofficial"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img style={{ margin: '4px' }} src={linkedin} />
-                                    </a>
-                                    <a
-                                        href="https://t.me/cycoinofficialcommunity"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img style={{ margin: '4px' }} src={telegram} />
-                                    </a>
-                                    <a
-                                        href="https://www.youtube.com/channel/UCG7Oa33hr_ILlV8IxkKkybw"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                    >
-                                        <img src={youtube1} height="26px" />
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3">
-                            <img src={coinlogo} alt="" className="w-100 newsletterimage" />
-                        </div>
+<section className="newsletter pb-5 pt-13 w-100 " id="navigate-id-10">
+            <div className="container">
+              <div className="row px-5 align-items-center m-1 py-4 desktop-view">
+                <div className="col-lg-8">
+                  <div className="subscribe-wrapper subscribe2-wrapper ">
+                    <div className="subscribe-text ">
+                      <h2 className="text-white">
+                        Get In Touch With
+                        <span> Quest3</span>
+                      </h2>
                     </div>
+                    <div className="subscribe-form pt-4">
+                      <div className="position-relative w-100">
+                        <input
+                          className="form-control buynow_form-text"
+                          placeholder="Enter Your Email Here"
+                          type="email"
+                          color='white'
+                          // value={newsLetter}
+                          // onChange={(e) => setNewsLetter(e.target.value)}
+                        />
+                        <button className="common-btn">
+                          Contact Us
+                        </button>
+                      </div>
+                    </div>
+                    <div className="for-link-sec pt-3">
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          style={{ margin: "4px" }}
+                          src={twitter1}
+                        />
+                      </a>
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          style={{ margin: "4px" }}
+                          src={instagram1}
+                        />
+                      </a>
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          style={{ margin: "4px" }}
+                          src={discord}
+                        />
+                      </a>
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          style={{ margin: "4px" }}
+                          src={linkedin}
+                        />
+                      </a>
+                      <a
+                        href="3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          style={{ margin: "4px" }}
+                          src={telegram}
+                        />
+                      </a>
+                      <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={youtube1}
+                          height="26px"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-lg-3">
+                  <img
+                    src={coinlogo}
+                    alt=""
+                    className="w-100 newsletterimage"
+                  />
+                </div>
+                </div>
                 </div>
             </section>
 

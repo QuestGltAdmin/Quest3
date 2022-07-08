@@ -5,134 +5,6 @@ import { useLingui } from '@lingui/react'
 
 export default function CirclePay() {
   
-    const [formerror, setFormError] = useState("");
-  
-    const [disabled, setDisabled] = useState(false);
-  
-    const [billingDetails, setBilling] = useState({
-      line1: "",
-      line2: "",
-      city: "",
-      district: "",
-      postalCode: "",
-      country: "",
-      name: ""
-    });
-  
-    const [metadata, setMetadata] = useState({
-      phoneNumber: "",
-      email: "",
-      sessionId: "xxx",
-      ipAddress: "18.118.222.179"
-      // ipAddress: "172.33.222.1"
-    });
-  
-    const [inputdata, setInputdata] = useState({
-      cardNumber: "",
-      cvv: "",
-      amount: "",
-      userid: "",
-      expMonth: "",
-      expYear: "",
-      channel: "",
-      description: "",
-      phoneNumber: "",
-      email: ""
-    });
-  
-    // const formdata = (event) => {
-    //   const name = event.target.name
-    //   const value = event.target.value
-    //   setInputdata({ ...inputdata, [name]: value })
-    // };
-  
-    // const formdata1 = (event) => {
-    //   const name = event.target.name
-    //   const value = event.target.value
-    //   setBilling({ ...billingDetails, [name]: value })
-    // };
-  
-    // const formdata2 = (event) => {
-    //   const name = event.target.name
-    //   const value = event.target.value
-    //   setMetadata({ ...metadata, [name]: value })
-    // };
-  
-    const payload = {
-      cardNumber: inputdata.cardNumber,
-      cvv: inputdata.cvv,
-      amount: inputdata.amount,
-      expMonth: inputdata.expMonth,
-      expYear: inputdata.expYear,
-      channel: inputdata.channel,
-      description: inputdata.description,
-      billingDetails: { ...billingDetails },
-      metadata: { ...metadata }
-    };
-  
-    const myfunction = async () => {
-  
-      const regexp = /^\S*$/;
-  
-      if (!inputdata.cardNumber || inputdata.cardNumber.length < 8 || inputdata.cardNumber.length > 19) {
-        setFormError("Please enter valid card number")
-      }
-  
-      else if (!inputdata.cvv || inputdata.cvv.length !== 3) {
-        setFormError("Please enter cvv number")
-      }
-  
-      else if (!inputdata.amount) {
-        setFormError("Please enter amount")
-      }
-  
-      else if (!inputdata.expMonth || inputdata.expMonth.length > 2) {
-        setFormError("Please enter expiry month")
-      }
-  
-      else if (!inputdata.expYear || inputdata.expYear.length !== 4) {
-        setFormError("Please enter expiry year")
-      }
-  
-      else if (!inputdata.phoneNumber || inputdata.phoneNumber.length < 10 || inputdata.phoneNumber.length > 15) {
-        setFormError("Please enter vaild phone number")
-      }
-  
-      else if (!billingDetails.name || regexp.test(billingDetails.name)) {
-        setFormError("Please enter Full name")
-      }
-  
-      else if (!billingDetails.city) {
-        setFormError("Please enter city name")
-      }
-  
-      else if (!billingDetails.country) {
-        setFormError("Please enter country name")
-      }
-  
-      // else if(!billingDetails.district){
-      //   setFormError("Please enter district name")
-      // }
-  
-      else if (!billingDetails.line1) {
-        setFormError("Please enter address")
-      }
-  
-      else if (!billingDetails.postalCode) {
-        setFormError("Please enter postal code")
-      }
-  
-      else if (!metadata.email) {
-        setFormError("Please enter email")
-      }
-  
-      else {
-  
-        setFormError("")
-  
-        setDisabled(true)
-    }
-}
 const { i18n } = useLingui()
 
     return (
@@ -142,40 +14,33 @@ const { i18n } = useLingui()
             <div className="row justify-content-center">
               <div className="col-lg-10">
                 <div className="payment_main w-100">
-                  <h2>Pay With Card</h2>
+                  {/* <h2>Pay With Card</h2> */}
                   <div className="row">
                     <div className="col-lg-6 col-md-6">
-                      <p>Card Details</p>
+                      <p>Account Details</p>
                       <label htmlFor="">Amount</label>
-                      <input type="text" name="amount" value="" id="" disabled />
+                      <input type="text" name="amount" placeholder='USDC' id="" disabled />
 
-                      <label htmlFor="">Card Number</label>
-                      <input type="number" name="cardNumber" value={inputdata.cardNumber} id="" placeholder="Card Number" />
-
-                      <label htmlFor="">CVV</label>
-                      <input type="text" name="cvv" value={inputdata.cvv} id="" placeholder="CVV"/>
-
+                      <label htmlFor="">Account Number</label>
+                      <input type="text" name="Account Number" id="" placeholder="Account Number" />
                       <div className="row">
-                        {/* <div className="col-lg-4">
-                          <label htmlFor="">CVV</label>
-                          <input type="text" name="" id="" placeholder="Card Number" />
-                        </div> */}
-                        <div className="col-lg-6">
-                          <label htmlFor="">Expiry month</label>
-                          <input type="number" name="expMonth" value={inputdata.expMonth} id="" placeholder="month" />
-                        </div>
-
-                        <div className="col-lg-6">
-                          <label htmlFor="">Expiry year</label>
-                          <input type="number" name="expYear" value={inputdata.expYear} id="" placeholder="year" />
-                        </div>
-
                       </div>
+
+                      <label htmlFor="">Branch Code</label>
+                      <input type="text" name="Code" id="" placeholder="Branch Number" />
+                      <div className="row">
+                      </div>
+
+                      <label htmlFor="">IBAN Number</label>
+                      <input type="text" name="Code" id="" placeholder="IBAN Number" />
+                      <div className="row">
+                      </div>
+
                       <label htmlFor="">Phone</label>
-                      <input type="text" name="phoneNumber" value={inputdata.phoneNumber} id="" placeholder="phone number"disabled />
+                      <input type="text" name="phoneNumber" id="" placeholder="phone number"/>
 
                       <label htmlFor=""> Email</label>
-                      <input type="email" name="email" disabled value={inputdata.email} id="" placeholder="email" />
+                      <input type="email" name="email" id="" placeholder="email" />
 
                       {/* <label htmlFor="">Description</label>
                       <input type="text" name="description" onChange={formdata} value={inputdata.description} id="" placeholder="Description" />
@@ -185,21 +50,21 @@ const { i18n } = useLingui()
                     </div>
                     <div className="col-lg-6 col-md-6">
                       <p>Billing Details</p>
-                      <label htmlFor="">Cardholder Name</label>
-                      <input type="text" name="name"  value={billingDetails.name} id="" placeholder="Full Name" />
+                      <label htmlFor="">Account Name</label>
+                      <input type="text" name="name" id="" placeholder="Full Name" />
 
                       <label htmlFor="">Address</label>
-                      <input type="text" name="line1" value={billingDetails.line1} id="" placeholder="Address" />
+                      <input type="text" name="line1" id="" placeholder="Address" />
 
                       <div className="row">
                         <div className="col-lg-12">
                           <label htmlFor="">City</label>
-                          <input type="text" name="city" value={billingDetails.city} id="" placeholder="City" />
+                          <input type="text" name="city" id="" placeholder="City" />
                         </div>
 
                         <div className="col-lg-12">
                           <label htmlFor=""> Postal Code</label>
-                          <input type="number" name="postalCode" value={billingDetails.postalCode} id="" placeholder=" Postal Code" />
+                          <input type="text" name="postalCode" id="" placeholder=" Postal Code" />
                         </div>
 
                         <div className="col-lg-4">
@@ -209,7 +74,7 @@ const { i18n } = useLingui()
                       </div>
                       <label htmlFor="">Country</label>
                       {/* <input type="text" name="country" onChange={formdata1} value={billingDetails.country} id="" placeholder="Country" /> */}
-                      <select value={billingDetails.country} name="country" id="country">
+                      <select name="country" id="country">
                         <option value="0" label="Select a country ... ">Select a country ... </option>
                         <optgroup id="country-optgroup-Africa" label="Africa">
                           <option value="DZ" label="Algeria">Algeria</option>
@@ -480,11 +345,9 @@ const { i18n } = useLingui()
                     </div>
                   </div>
                   <div className="row btn_row1">
-                    <h5 style={{ fontSize: "20px", color: "red", textAlign: "center" }}>{formerror}</h5>
+                    <h5 style={{ fontSize: "20px", color: "red", textAlign: "center" }}></h5>
                     <div className="col-lg-7 btn_row2">
-                      <button className="buy_cyy" onClick={() => {
-                        myfunction()
-                      }} disabled={disabled}>Transfer USDC to bank account</button>
+                      <button className="buy_cyy">Transfer USDC to bank account</button>
                     </div>
                   </div>
                 </div>

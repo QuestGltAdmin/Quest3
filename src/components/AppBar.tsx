@@ -1,7 +1,7 @@
 import { ChainId, Currency } from 'quest-quest3-sdk'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
-import Logo from '../assets/images/Quest3_green.png'
+import Logo from '../assets/images/Quest3_swap.png'
 import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
 import { useETHBalances } from '../state/wallet/hooks'
 import { ReactComponent as Burger } from '../assets/images/burger.svg'
@@ -9,6 +9,7 @@ import { ReactComponent as X } from '../assets/images/x.svg'
 import Web3Network from './Web3Network'
 import Web3Status from './Web3Status'
 import Web3Faucet from './Web3Faucet'
+import CirclePayButton from './Circlepaybutton'
 import MoreMenu from './Menu'
 import { ExternalLink, NavLink } from './Link'
 import { Disclosure } from '@headlessui/react'
@@ -334,10 +335,10 @@ function AppBar(): JSX.Element {
                                         <MoreMenu/> 
                                         <LanguageSwitch />
 
-                                        {/* {chainId &&
-                                            [ChainId.RINKEBY].includes(
+                                        {chainId &&
+                                            [ChainId.BSC_TESTNET].includes(
                                                 chainId
-                                            ) && <Web3Faucet />} */}
+                                            ) && <CirclePayButton />}
 
                                              
                                     </div>
