@@ -1073,18 +1073,18 @@ img{
   border: 1px solid #a77327;
   }
 
-  .custom section.newsletter .subscribe-text h2 {
+  section.newsletter .subscribe-text h2 {
     font-size: 48px;
     font-weight: 700;
 }
 
-.custom section.newsletter .subscribe-text h2 span {
+section.newsletter .subscribe-text h2 span {
     background: linear-gradient(90deg,#a77327,#efd67b 49.79%,#a77327);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.custom section.newsletter .subscribe-form input[type=email] {
+section.newsletter .subscribe-form input[type=email] {
     background: hsla(0,0%,100%,.1);
     border: 0;
     padding: 1.3rem 11rem 1.3rem 1rem;
@@ -1092,9 +1092,9 @@ img{
     width: 85%;
 }
 
-.custom section.newsletter .subscribe-form button {
+section.newsletter .subscribe-form button {
     left: 70%;
-    top: 20%;
+    top: 34%;
     background: linear-gradient(90deg,#a77327,#efd67b 49.79%,#a77327);
     border-radius: 6px;
     border: 0;
@@ -1124,4 +1124,9 @@ img{
     height: 32px !important;
     width: 32px;
     object-fit: contain;
+}
+section.newsletter .row {
+    border: 4px solid #d5b25c;
+    border-radius: 30px;
+    background: #090909;
 }

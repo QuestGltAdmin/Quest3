@@ -19,7 +19,19 @@ import image8 from '../../assets/images/cy-homepage-img/unsplash_aX1hN4uNd-I.png
 import questlogo from '../../assets/images/cy-homepage-img/Quest3_logo.png'
 import instagram from '../../assets/images/cy-homepage-img/Instagram.png'
 import twitter from '../../assets/images/cy-homepage-img/Twitter.png'
+import coinlogo from '../../assets/images/cy-homepage-img/favicon.png'
 import youtube from '../../assets/images/cy-homepage-img/Youtube.png'
+import discord from '../../assets/images/cy-homepage-img/Icon awesome-discord.png'
+import facebook from '../../assets/images/cy-homepage-img/Icon awesome-facebook.png'
+import instagram1 from '../../assets/images/cy-homepage-img/Icon awesome-instagram.png'
+import linkedin from '../../assets/images/cy-homepage-img/Icon awesome-linkedin.png'
+import telegram from '../../assets/images/cy-homepage-img/Icon awesome-telegram.png'
+import twitter1 from '../../assets/images/cy-homepage-img/Icon awesome-twitter-square.png'
+import youtube1 from '../../assets/images/cy-homepage-img/Icon awesome-youtube.png'
+
+
+
+
 
 import { settings } from 'cluster'
 import Slider from 'react-slick'
@@ -426,7 +438,7 @@ export default function HomePage() {
         </div>
       </section> */}
 
-<section className="newsletter pb-5 pt-13 " id="navigate-id-10">
+<section className="newsletter pb-5 pt-13 w-100 " id="navigate-id-10">
             <div className="container">
               <div className="row px-5 align-items-center m-1 py-4 desktop-view">
                 <div className="col-lg-8">
@@ -459,7 +471,7 @@ export default function HomePage() {
                       >
                         <img
                           style={{ margin: "4px" }}
-                          src="../../assets/images/Icon awesome-twitter-square.png"
+                          src={twitter1}
                         />
                       </a>
                       <a
@@ -469,7 +481,7 @@ export default function HomePage() {
                       >
                         <img
                           style={{ margin: "4px" }}
-                          src="../../assets/images/Icon awesome-instagram.png"
+                          src={instagram1}
                         />
                       </a>
                       <a
@@ -479,7 +491,7 @@ export default function HomePage() {
                       >
                         <img
                           style={{ margin: "4px" }}
-                          src="../../assets/images/Icon awesome-discord.png"
+                          src={discord}
                         />
                       </a>
                       <a
@@ -489,7 +501,7 @@ export default function HomePage() {
                       >
                         <img
                           style={{ margin: "4px" }}
-                          src="../../assets/images/Icon awesome-linkedin.png"
+                          src={linkedin}
                         />
                       </a>
                       <a
@@ -499,7 +511,7 @@ export default function HomePage() {
                       >
                         <img
                           style={{ margin: "4px" }}
-                          src="../../assets/images/Icon awesome-telegram.png"
+                          src={telegram}
                         />
                       </a>
                       <a
@@ -508,16 +520,16 @@ export default function HomePage() {
                         rel="noopener noreferrer"
                       >
                         <img
-                          src="../../assets/images/Icon awesome-youtube.png"
+                          src={youtube1}
                           height="26px"
                         />
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4">
+                <div className="col-lg-3">
                   <img
-                    src="/assets/images/moneda_transparent.gif"
+                    src={coinlogo}
                     alt=""
                     className="w-100 newsletterimage"
                   />
