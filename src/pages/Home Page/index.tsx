@@ -455,6 +455,7 @@ export default function HomePage() {
                           className="form-control buynow_form-text"
                           placeholder="Enter Your Email Here"
                           type="email"
+                          color='white'
                           // value={newsLetter}
                           // onChange={(e) => setNewsLetter(e.target.value)}
                         />
@@ -465,7 +466,7 @@ export default function HomePage() {
                     </div>
                     <div className="for-link-sec pt-3">
                       <a
-                        href="https://twitter.com/Cycoin3"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -475,7 +476,7 @@ export default function HomePage() {
                         />
                       </a>
                       <a
-                        href="https://instagram.com/cycoinofficial?igshid=YmMyMTA2M2Y="
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -485,7 +486,7 @@ export default function HomePage() {
                         />
                       </a>
                       <a
-                        href="https://discord.com/channels/978286839393845258/978286839901339720"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -495,7 +496,7 @@ export default function HomePage() {
                         />
                       </a>
                       <a
-                        href="https://www.linkedin.com/company/cycoinofficial"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -505,7 +506,7 @@ export default function HomePage() {
                         />
                       </a>
                       <a
-                        href="https://t.me/cycoinofficialcommunity"
+                        href="3"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -515,7 +516,7 @@ export default function HomePage() {
                         />
                       </a>
                       <a
-                        href="https://www.youtube.com/channel/UCG7Oa33hr_ILlV8IxkKkybw"
+                        href="#"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

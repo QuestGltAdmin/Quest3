@@ -1085,6 +1085,7 @@ section.newsletter .subscribe-text h2 span {
 }
 
 section.newsletter .subscribe-form input[type=email] {
+    color: "white";
     background: hsla(0,0%,100%,.1);
     border: 0;
     padding: 1.3rem 11rem 1.3rem 1rem;
