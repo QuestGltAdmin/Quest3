@@ -17,26 +17,27 @@ const { i18n } = useLingui()
                   {/* <h2>Pay With Card</h2> */}
                   <div className="row">
                     <div className="col-lg-6 col-md-6">
-                      <p>Card Details</p>
+                      <p>Account Details</p>
                       <label htmlFor="">Amount</label>
                       <input type="text" name="amount" placeholder='USDC' id="" disabled />
 
                       <label htmlFor="">Account Number</label>
-                      <input type="number" name="Account Number" id="" placeholder="Card Number" />
+                      <input type="text" name="Account Number" id="" placeholder="Account Number" />
                       <div className="row">
                       </div>
 
-                      <label htmlFor="">Bank Code</label>
-                      <input type="number" name="Code" id="" placeholder="Card Number" />
+                      <label htmlFor="">Branch Code</label>
+                      <input type="text" name="Code" id="" placeholder="Branch Number" />
                       <div className="row">
-                        {/* <div className="col-lg-4">
-                          <label htmlFor="">CVV</label>
-                          <input type="text" name="" id="" placeholder="Card Number" />
-                        </div> */}
-
                       </div>
+
+                      <label htmlFor="">IBAN Number</label>
+                      <input type="text" name="Code" id="" placeholder="IBAN Number" />
+                      <div className="row">
+                      </div>
+
                       <label htmlFor="">Phone</label>
-                      <input type="text" name="phoneNumber" id="" placeholder="phone number"disabled />
+                      <input type="text" name="phoneNumber" id="" placeholder="phone number"/>
 
                       <label htmlFor=""> Email</label>
                       <input type="email" name="email" id="" placeholder="email" />
@@ -63,7 +64,7 @@ const { i18n } = useLingui()
 
                         <div className="col-lg-12">
                           <label htmlFor=""> Postal Code</label>
-                          <input type="number" name="postalCode" id="" placeholder=" Postal Code" />
+                          <input type="text" name="postalCode" id="" placeholder=" Postal Code" />
                         </div>
 
                         <div className="col-lg-4">
