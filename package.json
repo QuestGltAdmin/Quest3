@@ -185,9 +185,7 @@
     "license": "GPL-3.0-or-later",
     "dependencies": {
         "@lufycz/sushi-data": "^2.0.0-canary-21",
-        "@types/aos": "^3.0.4",
         "@types/react-slick": "^0.23.10",
-        "aos": "^2.3.4",
         "caniuse-lite": "^1.0.30001322"
     }
 }

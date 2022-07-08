@@ -34,10 +34,10 @@ function HomeHeader(): JSX.Element {
                        <a className="nav-link" href="#">Commodities</a>
                      </li>
                      <li className="nav-item">
-                       <a className="nav-link" href="http://3.128.18.127:3000" >Trading</a>
+                       <a className="nav-link" href="http://3.143.163.192:3000" >Trading</a>
                      </li>
                      <li className="nav-item">
-                       <a className="nav-link" href="/">Swaps</a>
+                       <a className="nav-link" href="/">Swap</a>
                      </li>
                      <li className="nav-item">
                        <a className="nav-link" href="#">Incubator</a>
