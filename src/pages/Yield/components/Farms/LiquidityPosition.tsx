@@ -40,10 +40,13 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                         {/* <div className="text-gray-500 text-sm sm:text-base text-right"> */}
                             {/* {formattedNum(props.farm.tvl, true)} */}
                         {/* </div> */}
-                        <div className="font-semibold text-sm sm:text-base text-right">
+                       {props.farm && (
+                         <div className="font-semibold text-sm sm:text-base text-right">
                             {/* {props.farm.roiPerYear > 100 ? '10000%+' : formattedPercent(props.farm.roiPerYear * 100)} */}
-                            25%
+                            {((props.farm.apy)*100).toFixed(2)} %
+                            {/* 25% */}
                         </div>
+                        )}
                     </div>
                     <div
                         className="grid grid-cols-3 md:grid-cols-3 py-4 px-4 cursor-pointer select-none rounded text-sm"
@@ -86,7 +89,7 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                                 {props.farm && (
                                     <>
                                         {/* <div className="text-gray-500 text-right font-semibold text-xs">
-                                            {formattedNum(props.farm.sushiRewardPerDay)} QUEST3 per day
+                                            {formattedNum(props.farm.RewardPerDay)} QUEST3 per day
                                         </div>
                                         <div className="text-gray-500 text-right font-semibold text-xs">
                                             {formattedNum(props.farm.secondaryRewardPerDay)} WMATIC per day
@@ -96,7 +99,7 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                                 {props.farm &&(
                                     <>
                                         {/* <div className="text-gray-500 text-right font-semibold text-xs">
-                                            {formattedNum(props.farm.sushiRewardPerDay)} QUEST3 per day
+                                            {formattedNum(props.farm.RewardPerDay)} QUEST3 per day
                                         </div>
                                         <div className="text-gray-500 text-right font-semibold text-xs">
                                             {formattedNum(props.farm.secondaryRewardPerDay)} ALCX per day
@@ -106,8 +109,8 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                                 {props.farm  && (
                                     <>
                                         <div className="text-gray-500 text-right font-semibold text-sm sm:text-sm">
-                                            {/* {formattedNum(props.farm.sushiRewardPerDay)}  */}
-                                            2.15 QUEST3
+                                            {(props.farm.RewardPerDay).toFixed(5)}
+                                            {/* 2.15 QUEST3 */}
                                         </div>
                                         <div className="text-gray-500 text-right text-xs">per day</div>
                                     </>
@@ -127,7 +130,8 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                             <div>
                                 <div className="text-gray-500 text-right font-semibold text-base sm:text-lg">
                                     {/* {props.farm.roiPerYear > 100 ? '10000%+' : formattedPercent(props.farm.roiPerYear * 100)} */}
-                                    25%
+                                    {/* 25% */}
+                                    {((props.farm.apy)*100).toFixed(2)} %
                                     {/* {formattedPercent(farm.roiPerMonth * 100)}{' '} */}
                                 </div>
                                 <div className="text-gray-500 text-right text-xs">annualized</div>

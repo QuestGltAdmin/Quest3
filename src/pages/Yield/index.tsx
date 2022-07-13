@@ -32,6 +32,7 @@ import { formattedNum, isAddressString, isWETH } from 'utils'   // for token bal
 import { ethers } from 'ethers'
 import { useCallback } from 'react'
 import { useTransactionAdder } from '../../state/transactions/hooks'
+import { ConsoleView } from 'react-device-detect'
 
 export const FixedHeightRow = styled(RowBetween)`
     height: 24px;
@@ -45,13 +46,15 @@ export default function Yield(): JSX.Element {
     // Get Farms
     const masterchefv1 = useMasterChefFarms()
     const masterchefv2 = useMasterChefV2Farms()
-    const minichef = useMiniChefFarms()
+    const minichefdetail = useMiniChefFarms()
+    const minichef = minichefdetail.farms_;
+    const minichefreward = minichefdetail.reward_;
+    const minichefapys = minichefdetail.apys_;
     const allFarms = _.concat(
         masterchefv2 ? masterchefv2 : [],
         minichef ? minichef : [],
         masterchefv1 ? masterchefv1 : []
     ) 
-
     const trackedTokenPairs = useTrackedTokenPairs()    // It's an object of objects
     const val=Object.values(trackedTokenPairs);
     const v= Object.values(val);
@@ -164,7 +167,6 @@ export default function Yield(): JSX.Element {
                     pid,
                     pairAddress: data.liquidityToken.address,
                     tvl: 0,
-
                     // pairSymbol: data.tokensymbol,
                     // liquidityPair: {
                     //     collateral: {
@@ -174,7 +176,8 @@ export default function Yield(): JSX.Element {
                     //     },
                     //     asset: { id: pair?.asset, symbol: pair?.assetSymbol, decimals: pair?.assetDecimals }
                     // },
-                    // sushiRewardPerDay: cyyRewardPerDay,
+                    RewardPerDay: minichefreward[1],
+                    apy: minichefapys[1],
                     // roiPerYear: pair?.roiPerYear,
                     // totalAssetStaked: pair?.totalAssetStaked
                     //     ? pair?.totalAssetStaked / Math.pow(10, pair?.assetDecimals)
@@ -194,7 +197,6 @@ export default function Yield(): JSX.Element {
             return data!==undefined;
         })
     }
-
 
     // MasterChef v2
     const farms = allFarms
