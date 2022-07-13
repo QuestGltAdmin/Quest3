@@ -122,6 +122,11 @@ const TOKEN_ICONS: { [chainId in ChainId]?: any } = {
     },
     [ChainId.BSC_TESTNET]: {
         [String('0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd').toLowerCase()]: 'BNB-square',
+        [String('0x1DaCc50c3fF355257D1d81ca4eAE4530b7f09D94').toLowerCase()]: 'BUSD-square',
+        [String('0x6d44F96b3652C96d5D9eE82ca09B062d2ef60F78').toLowerCase()]: 'BTC-square',
+        [String('0x09C8C43c04D5530005130637b13AEA3EaB1353a9').toLowerCase()]: 'USDT-square',
+        [String('0x01EC9b561D86AE7B8111AB7DAAD27Da365457EFB').toLowerCase()]: 'USDC-square',
+        [String('0x1d3e64aa989a61c4d30c259dce391b784b55973b').toLowerCase()]: 'SUSHI-square',
     },
     [ChainId.KOVAN]: {
         [String('0x482dC9bB08111CB875109B075A40881E48aE02Cd').toLowerCase()]: 'BAT-square',
