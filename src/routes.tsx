@@ -11,8 +11,6 @@ import {
     RedirectOldAddLiquidityPathStructure,
     RedirectToAddLiquidity
 } from './pages/AddLiquidity/redirects'
-import Bento from './pages/BentoBox'
-import BentoBalances from './pages/BentoBox/Balances'
 import Migrate from './pages/Migrate'
 import Pool from './pages/Pool'
 import PoolFinder from './pages/PoolFinder'
@@ -45,9 +43,6 @@ function Routes(): JSX.Element {
     const { chainId } = useActiveWeb3React()
     return (
         <Switch>
-            {/* BentoApps */}
-            {/* <Route exact strict path="/bento" component={Bento} />
-            <WalletRoute exact strict path="/bento/balances" component={BentoBalances} /> */}
 
             {/* {chainId === ChainId.MAINNET && (
                 <Route exact strict path="/claim" component={OpenClaimAddressModalAndRedirectToSwap} />

@@ -52,7 +52,6 @@ export default function InputGroup({
 
     const pairAddressChecksum = isAddressString(pairAddress)
 
-    //const { deposit } = useBentoBox()
     const balance = useTokenBalance(pairAddressChecksum)
     const staked = useStakedBalance(pid, assetDecimals) // kMP depends on decimals of asset, SLP is always 18
     const pending = usePendingCyy(pid)
