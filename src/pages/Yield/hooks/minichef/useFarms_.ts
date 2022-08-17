@@ -18,6 +18,7 @@ function useFarms(){
         let allocation:any[]=[]
         let reward:any[]=[]
         let rewardperday:any[]=[]
+        let rewardperyear:any[]=[]
         let apy:any[]=[]
         let i;
         const totalAllocation = await  masterChefContract?.totalAllocPoint();  
@@ -28,8 +29,9 @@ function useFarms(){
             allocation[i] = allocation[i].allocPoint._hex;
             allocation[i] = parseInt(allocation[i]);
             reward[i] = ((allocation[i]/totalAllocation)*tokenpersec)/1e18;
-            rewardperday[i] = reward[i]*86400
-            apy[i] = ((1+(rewardperday[i]/365))**365-1)
+            rewardperday[i] = reward[i]*86400;
+            rewardperyear[i] = rewardperday[i]*365
+            apy[i] = ((1+(rewardperyear[i]/365))**365-1)
         }
         const result = await Promise.all(pa);
         const rewards = await Promise.all(rewardperday);
