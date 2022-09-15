@@ -43,8 +43,8 @@ const LiquidityPosition = (props:LiquidiPositionProps) => {
                        {props.farm && (
                          <div className="font-semibold text-sm sm:text-base text-right">
                             {/* {props.farm.roiPerYear > 100 ? '10000%+' : formattedPercent(props.farm.roiPerYear * 100)} */}
-                            {(props.farm.apy).toFixed(2)} %
-                            {/* 25% */}
+                            {/* {(props.farm.apy).toFixed(2)} % */}
+                            25%
                         </div>
                         )}
                     </div>

@@ -178,7 +178,7 @@ export default function Yield(): JSX.Element {
                     // },
                     RewardPerDay: minichefreward[pid],
                     // RewardPerDay: 20,
-                    apy: minichefapys[pid],
+                    // apy: minichefapys[pid],
                     // roiPerYear: pair?.roiPerYear,
                     // totalAssetStaked: pair?.totalAssetStaked
                     //     ? pair?.totalAssetStaked / Math.pow(10, pair?.assetDecimals)
